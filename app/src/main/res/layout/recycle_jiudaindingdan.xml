@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_shadow"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/jiudiantubiao"
+            android:id="@+id/image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toLeftOf="@+id/type"
+            android:layout_marginLeft="8dp"
+            android:hint="景点名字"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/iv_buy"
+            android:hint="格式"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/iv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:hint="价格"
+            android:layout_marginRight="8dp"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:hint="资料"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="13dp"
+            android:textColor="#FF716C6D"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/price"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="删除订单"
+            android:id="@+id/shanchu"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_shadow"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

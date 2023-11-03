@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginRight="8dp"
+        android:id="@+id/tupian"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大床房"
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/tupian"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:textColor="@color/green"
+        />
+    <TextView
+        android:id="@+id/chuangziliao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大床   无窗   15平方米"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/tupian"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:id="@+id/buy"
+        android:layout_toRightOf="@+id/tupian"
+        android:layout_below="@+id/chuangziliao"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:background="@drawable/round_button"
+        android:text="立即预定"
+        android:id="@+id/yuding"
+        android:textColor="@color/blue"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chuangziliao"
+        android:layout_marginRight="8dp"
+        />
+
+</RelativeLayout>

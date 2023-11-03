@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:id="@+id/iv"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/sanduao"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="三都澳"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/buy"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buy"
+            android:text="价格"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name"
+            android:textColor="#FF716C6D"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。 "/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

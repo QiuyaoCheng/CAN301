@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/round_button"
+        android:src="@drawable/sanduao"/>
+
+
+      <TextView
+          android:id="@+id/name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="三都澳"
+          android:layout_marginLeft="2dp"
+          android:textColor="#FF8F03"
+          android:textSize="18dp" />
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/name"
+        android:textColor="#FF716C6D"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:text="三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。 "/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="票价:"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:id="@+id/t2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:id="@+id/buy"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/t2"
+            android:textSize="16dp"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pingfen"
+             android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="评分"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/mediumvioletred"
+            />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

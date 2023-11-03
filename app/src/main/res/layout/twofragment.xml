@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/iv"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/weixiaobao"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="水煮鱼"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0分"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/name"
+            android:textColor="@color/red"
+            android:id="@+id/pingfen"/>
+        <TextView
+            android:id="@+id/buy"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥117/人"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/mediumvioletred"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/ziliao"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:text="重庆火锅 宝信广场" />
+
+    </RelativeLayout>
+
+</LinearLayout>

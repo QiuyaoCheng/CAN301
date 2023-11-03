@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.itcast.recycleview.XiugaimingchengActivity">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="手机号修改"
+        android:textColor="@color/white"
+        android:background="@drawable/home_bg"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_back_blackdp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"/>
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="提交"
+        android:textSize="20dp"
+        android:id="@+id/tijiao"
+        android:textColor="@color/white" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="修改手机号"
+        android:id="@+id/xiugaishoujihao"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改的手机号格式要正确"
+        android:layout_below="@+id/xiugaishoujihao"
+        android:layout_marginLeft="8dp"/>
+</RelativeLayout>

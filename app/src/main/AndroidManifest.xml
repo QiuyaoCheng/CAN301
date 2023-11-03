@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- android:hardwareAccelerated = "true"的时候会牺牲内存来加快图片的加载速度。 -->
+    <!-- android:largeHeap = "false"会限制app应用申请的内存大小。 -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/tupiao"
+        android:label="闽东旅游"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".dengluActivity" />
+        <activity android:name=".gerenziliaoActivity" />
+        <activity android:name=".anquanActivity" />
+        <activity android:name=".xiugaimimaActivity" />
+        <activity android:name=".zhuceActivity" />
+        <activity android:name=".zhuxiaoActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".DingweiActivity" />
+        <activity android:name=".DingdanActivity" />
+        <activity android:name=".JiudianActivity" />
+        >
+        <activity android:name=".ZhujiemianActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".XiugaimingchengActivity" />
+        <activity android:name=".XiugaishoujihaoActivity" />
+        <activity android:name=".XiugaiyouxiangActivity" />
+        <activity android:name=".JingdiandingdanActivity" />
+        <activity android:name=".JiudiandingdanActivity" />
+        <activity android:name=".MeishiActivity" />
+        <activity android:name=".JianshaoActivity" />
+        <activity android:name=".JiudiandingdanxiangqingActivity"></activity>
+    </application>
+
+</manifest>
