@@ -112,10 +112,10 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "车岭古道位于寿宁县斜滩镇斜滩村、清源乡阳尾村，年代为明至清。明中叶形成，由明迄清历代维修，是寿宁通往福宁府的重要古官道。古道自斜滩蜿蜒而上，相对高差658米，全长约10公里。山路用石块随地形铺就，宽1到2米，沿途分布多处路亭、摩崖石刻、关隘，主要有车岭关、一亭、“岭峻云深”石刻、二亭、三亭、四亭遗址、五亭遗址、“去思碑”石刻、平氛关、龙凤亭等。"
     };
     //福安市
-    private String[] fu = {"福安白云山","兰谷温泉度假村","天池草场","金山大峡谷","狮峰寺","廉村","穆云畲族乡","闽东革命纪念馆","福安文化馆","柏柱洋红色旅游景区","福安市博物馆"};
-    private int[] fuicons = {R.drawable.baiyunshan,R.drawable.langu,R.drawable.tianchi,R.drawable.jinshan,R.drawable.helin,R.drawable.liancun,R.drawable.shezu,R.drawable.mindonggeming,R.drawable.mindonggeming,R.drawable.yanghongse,R.drawable.fuanbowuguan};
-    private String[] fubuy = {"¥56","¥98","¥30","¥38","免费","免费","免费","免费","免费","免费","免费"};
-    private String[] fuintroduce ={"福建福安白云山，国家风景名胜区、国家4A级旅游景区、世界地质公园、国家地质公园。位于福建省福安市西北部穆云乡、晓阳镇境内，距福安市区约40公里。",
+    private String[] lian = {"Mount Huaguoshan","","KongWang Mountains","YunTai Mountains","Taohuajian Mountain Stream","Eden Garden","LianYunGang Museum","Qinshan Island","And Lake Wetland Park","Boat Mountain waterfall"};
+    private int[] lianicons = {R.drawable.baiyunshan,R.drawable.langu,R.drawable.tianchi,R.drawable.jinshan,R.drawable.helin,R.drawable.liancun,R.drawable.shezu,R.drawable.mindonggeming,R.drawable.mindonggeming,R.drawable.yanghongse,R.drawable.fuanbowuguan};
+    private String[] lianbuy = {"Free","¥98","¥30","¥38","免费","免费","免费","免费","免费","免费","免费"};
+    private String[] lianintroduce ={"福建福安白云山，国家风景名胜区、国家4A级旅游景区、世界地质公园、国家地质公园。位于福建省福安市西北部穆云乡、晓阳镇境内，距福安市区约40公里。",
             "兰谷温泉位于溪潭镇兰田村，福安西高速出口300米处，距离福安市区仅6公里，占地面积3.3万平方米。依山而建，总计划投资8000万元，规划有室内外温泉池58个。一期已投入2000万元，以畲医药养颜养生温泉为主题，开发有26个不同主题的养生药泉，二期将重点开发院落式私家温泉，给福安人一个家门口的“治愈系”温泉度假胜地。",
             "天池草场位于福建省福安市松罗乡东山之巅，环境优美，可朝看日出，夕赏晚霞，晴观蓝天白云，雨观云海虹霓，置身连绵起伏的广袤草坪，仿佛临登仙界。景区内设亲子园、拓展园、萌宠园及多种新型游乐设备，服务设施齐全，是亲子、度假、避暑、学研的好去处。",
             "金山大峡谷生态风景区是位于福安市松罗乡东北部，距福安市区仅40余公里，景区游览路线全长3.5公里。金山大峡谷是集运动、体闲、观光、娱乐、养生于一体的乡村生态自然风景区。\n",
@@ -408,10 +408,10 @@ public class ZhujiemianActivity extends AppCompatActivity {
             introduces = shouintroduce;
         }
         if(name_receive.equals("福安市")){
-            name = fu;
-            icons = fuicons;
-            buy = fubuy;
-            introduces = fuintroduce;
+            name = lian;
+            icons = lianicons;
+            buy = lianbuy;
+            introduces = lianintroduce;
         }
         if(name_receive.equals("柘荣县")){
             name = zhe;
