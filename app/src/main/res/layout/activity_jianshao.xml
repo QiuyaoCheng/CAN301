@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.itcast.recycleview.JianshaoActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="景点详情"
+        android:textColor="@color/white"
+        android:background="@drawable/home_bg"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_arrow_back_blackdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="太姥山风景名胜区"
+        android:layout_below="@id/text1"
+        android:textSize="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/text2"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:id="@+id/recycle" />
+</RelativeLayout>

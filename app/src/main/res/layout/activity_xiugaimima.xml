@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.itcast.recycleview.xiugaimimaActivity">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:background="@drawable/home_bg"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ic_arrow_back_blackdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="97dp"
+        android:id="@+id/name"
+        android:text="账号:"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="114dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:hint="输入手机号"
+        android:textSize="13sp"
+        android:background="@null"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="97dp"
+        android:id="@+id/mima"
+        android:layout_below="@+id/name"
+        android:text="密码:"
+        android:layout_marginTop="14dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/phone"
+        android:textSize="13sp"
+        android:hint="输入密码"
+        android:background="@null"
+        android:layout_toRightOf="@+id/mima"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:id="@+id/xiugai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/mima"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/round_button"
+        android:text="修改密码" />
+
+</RelativeLayout>

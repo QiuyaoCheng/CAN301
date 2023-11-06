@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.itcast.recycleview.dengluActivity">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="登录界面"
+        android:textColor="@color/white"
+        android:background="@drawable/home_bg"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ic_arrow_back_blackdp"
+        />
+
+    <EditText
+        android:id="@+id/IDinput"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="70dp"
+        android:hint="请输入手机号"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@android:color/transparent"
+        />
+    <EditText
+        android:id="@+id/code_input"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:layout_below="@id/IDinput"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/log_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fanhui"
+        android:layout_below="@+id/code_input"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/round_button"
+        android:text="登 录"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/log_on_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/log_on"
+        android:layout_alignBottom="@+id/log_on"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/round_button"
+        android:text="注 册"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
