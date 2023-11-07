@@ -85,17 +85,17 @@ public class OneFragment extends Fragment {
             "想要游览寿宁，寿宁福宁宾馆将会是一个不错的的住宿之选。优美的环境，再搭配上细致周到的服务，酒店的休闲区定能满足您的品质需求"};
 
     //福安市
-    private String[] funame = {"天隆商务宾馆","宁德好乐迪假日酒店","福安南舟宾馆","福安花园宾馆","宁德尚客快捷酒店","海鑫精品酒店","福安华利宾馆","福安铂晶悦己酒店"};
-    private  int[]  fuicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali,R.drawable.bojingyueji};
-    private String[] fubuy = {"¥91","¥112","¥145","¥105","¥116","¥105","¥55","¥166"};
-    private String [] fuintroduce = {"天隆商务宾馆交通便利，客房设施齐全，布置温馨舒适，服务周到。客房干净整洁，宽敞明亮，环境卫生，配套设施齐全，服务周到，方便入住，性价比高，住宿环境、通风采光较好。",
-            "宁德好乐迪假日酒店是一家以提供住宿产品为王的精品酒)占，11于市中心主干道新华中路。周边有众多银行、餐饮、购物功所，定怀闲、娱乐、美食的黄金地段，地理位置优越、交通便利。酒店按高称准设计，集多功能为一体，健康舒适、典雅别致，定懋简芳公十、目助旅游下榻的理想选择。酒店始终如一地向顾客提供干净舒适的客房与贴心友好的服务。",
-            "福安南舟宾馆，位于福安市区阳头街道花园路，宾馆内置设施齐全，布置合理，温馨舒适，是您理想的入住温馨家园!",
-            "福安花园宾馆，位于福安市区阳头街道花园路，宾馆内置设施齐全，布置合理，温馨舒适，是您理想的入住家园式酒店!",
-            "尚客快捷酒店位于福安的商业中心，在长途站对面，高速路口出口处，酒店一楼代售汽车票、火车票和飞机票，机场大巴在此停靠。旅游出行购物休闲非常便利。福安有中国较大的民间造船基地，有着较大的绿茶基地。宋理宗年间，福安籍一位官员申请建县郡写下的一首诗，可以非常准确的说明福安的情况，而宋理宗就是看到这首诗而提笔批注:赐以五福，以安一县。“福安\"因此得名。",
-            "福安海鑫精品酒店位于花园路，环境优雅，出行便利，交通快捷。福安海鑫精品酒店客房干净整洁，设施完善，服务热情。酒店以“宾客至上，服务第一\"为经营宗旨，使您感到安全、舒适、方便、愉快，给您一个安静舒适的居住环境。",
-            "福安宁德华利宾馆福安华利宾馆是一家提供住宿客房服务的经济型宾馆，位于汽车客运站的后面，交通异常便捷。宾馆一贯秉承“经济实惠、方便快捷\"的服务理念,竭诚欢迎您的光临。",
-            "酒店位于福建省宁德市福安市鹤峰路,地处繁华闹市区和旅游中心，紧靠环城高速公路，福安市汽车站。天马山森林公园信步可达，香山寺、鹤山道观等诸多景点更是近在咫尺。这里还有金马市场、水果市场等多姿多彩的购物为您生活提供更多便捷。"};
+    private String[] lianname = {"Huaguoshan Hotel","Sotitel Lianyungang Suning","Zhongyin Mingdu Hotel","Addo Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
+    private  int[]  lianicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali};
+    private String[] lianbuy = {"¥91","¥112","¥145","¥105","¥116","¥105","¥150"};
+    private String [] lianintroduce = {
+            "Huaguoshan Hotel has convenient transportation, complete room facilities, warm and comfortable layout, and thoughtful service. Rooms clean and tidy, spacious and bright, environmental health, complete supporting facilities, thoughtful service, convenient to stay, cost-effective, accommodation environment, good ventilation and lighting.",
+            "Sotitel Lianyungang Suning is a boutique hotel with accommodation products as the king. There are many banks, restaurants and shopping centers around, and it is a prime location for leisure, entertainment and food, with superior geographical location and convenient transportation.",
+            "Zhongyin Mingdu Hotel has complete built-in facilities, reasonable layout, warm and comfortable, is your ideal stay warm home!",
+            "Addo Hotel has complete built-in facilities, reasonable layout, warm and comfortable, is your ideal stay warm home!",
+            "Jinjiang Inn is located in the business center, opposite the long-distance station, at the exit of the highway intersection. The first floor of the hotel sells bus tickets, train tickets and air tickets, and the airport bus stops here. It is very convenient to travel, shopping and leisure.",
+            "Home Inn rooms clean and tidy, perfect facilities, warm service. Hotel to \"guests first, service first\" for the purpose of business, make you feel safe, comfortable, convenient, pleasant, to give you a quiet and comfortable living environment.",
+            "Fuan Ningde Huali Hotel Fuan Huali Hotel is an economy hotel that provides accommodation room service, located behind the bus station, the traffic is extremely convenient. The hotel has always been adhering to the \"economical, convenient and fast\" service concept, sincerely welcome your visit."};
 
     //柘荣县
     private String[] zhename = {"柘荣京鼎荣商务酒店","柘荣县富商商务酒店","柘荣幽舍酒店","柘荣县宾馆","柘荣县九华洲宾馆","柘荣东华大酒店","宁德乘峰宾馆"};
@@ -186,11 +186,11 @@ public class OneFragment extends Fragment {
             buy =shoubuy;
             introduces = shouintroduce;
         }
-        if(name_receive1.equals("福安市")){
-            name1 = funame;
-            icons = fuicons;
-            buy =fubuy;
-            introduces = fuintroduce;
+        if(name_receive1.equals("Lianyungang")){
+            name1 = lianname;
+            icons = lianicons;
+            buy =lianbuy;
+            introduces = lianintroduce;
         }
         if(name_receive1.equals("柘荣县")){
             name1 = zhename;

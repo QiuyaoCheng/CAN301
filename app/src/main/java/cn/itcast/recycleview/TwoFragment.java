@@ -92,18 +92,19 @@ public class TwoFragment extends Fragment {
     private String[] shoutime = {"10:30-13:30，16:30-20:30","08:30-24:00","09:00-24:00","10:00-24:00","08:00-24:00","11:00-24:00"};
 
     //福安市
-    private String[] funame = {"小咖私厨工坊（福安店）","牛道","御源府餐厅（福安店）","江滨酒楼","味觉种子（福安市）","邦维执匠·咖餐甜点（甜点店）","福台源自助火锅·烧烤"};
-    private  String[]  fuicons = {"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdpic.tiankong.com%2F8m%2Fg5%2FQJ7123795297.jpg&refer=http%3A%2F%2Fdpic.tiankong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669903422&t=7d6def729ee3b9f345c46395659cf656",
-            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201708%2F30%2F20170830163846_cAjfZ.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669903548&t=fec2e38945f6f497bbd06b06a00da00b",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E5%AE%89%E5%B8%82/yuyuanfucanting.jpg",
-            "https://img1.baidu.com/it/u=3662237316,2104661046&fm=253&fmt=auto&app=138&f=JPEG?w=857&h=500",
-            "https://img2.baidu.com/it/u=1158199449,1937116701&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E5%AE%89%E5%B8%82/bangweizhijiang.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E5%AE%89%E5%B8%82/futaiyuanzizhu.jpg"};
-    private String[] fubuy = {"¥54/人","¥100/人","¥75/人","¥129/人","¥45/人","¥88/人","¥115/人"};
-    private String [] fuintroduce = {"西餐 冠后路","潮汕牛肉火锅 福安市中心城区","福建菜 福安市中心城区","其他美食 甘棠镇","特色菜 福安市中心城区","西餐 阳头广场","自助餐 福安市中心城区"};
-    private String[] fupingfen = {"3.9分","3.4分","3.7分","3.8分","3.4分","4.1分","3.4分"};
-    private String[] futime = {"11:00-22:00","16:00-次日02:00","11:00-13:30,16:30-21:00","08:00-13:30,16:00-20:00","17:00-次日02:00","11:00-23:30","16:00-23:30"};
+    private String[] lianname = {"Chengen Chinese Restaurant","Seafood home cooking","Wanghai Tide Restaurant","Yongde Restaurant","Dubble Happiness Restaurant","Koryewon Barbecue","Xin Xiang Hui"};
+    private  String[]  lianicons = {
+            "https://dimg04.c-ctrip.com/images/0102512000a2zl2ch0E82_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/0102d120009l3s0lh065D_R_1600_10000.jpg",
+            "https://dimg04.c-ctrip.com/images/0101712000a997fnp727E_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/0105e12000a6ybw7446D7_C_1600_1200.png",
+            "https://dimg04.c-ctrip.com/images/100k180000013r9ujA678_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/100j0k000000cjh78CC89_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/1004070000002ny775BA2_C_1600_1200.jpg"};
+    private String[] lianbuy = {"¥89/person","¥100/person","¥75/person","¥129/person","¥45/person","¥88/person","¥115/peron"};
+    private String [] lianintroduce = {"2nd Floor, 98 Huaguoshan Avenue","155 zhongshan West Road, West Unit","No. 39 Haitang Middle Road, Lianyun District","Qixia Road pedestrian street seafood food City, No. 20 seafood street","21 Haichang North Road","Hengli Building, intersection of Haichang Road and Qingnian Road, Haizhou District","F5, Lianyungang Suning Plaza, No.58 Tongguan North Road, Haizhou District"};
+    private String[] lianpingfen = {"3.9 points","3.4 points","3.7 points","3.8 points","3.4 points","4.1 points","3.4 points"};
+    private String[] liantime = {"11:00 am-22:00 pm","16:00 pm-02:00 am","11:00 am-13:30 pm,16:30 pm-21:00 pm","08:00 am-13:30 pm,16:00 pm-20:00 pm","17:00 pm-02:00 am","11:00 am-23:30 pm","16:00 pm-23:30 pm"};
 
     //柘荣县
     private String[] zhename = {"晓家碧芋","聚福楼私房菜","小富春饭店","东源农家菜","乐乐锅（柘荣店）","恒昌荣饭店","九香火锅（柳城南路店）"};
@@ -213,13 +214,13 @@ public class TwoFragment extends Fragment {
             pingfen = shoupingfen;
             jiaotime = shoutime;
         }
-        if(name_receive1.equals("福安市")){
-            name1 = funame;
-            icons = fuicons;
-            buy =fubuy;
-            introduces = fuintroduce;
-            pingfen = fupingfen;
-            jiaotime = futime;
+        if(name_receive1.equals("Lianyungang")){
+            name1 = lianname;
+            icons = lianicons;
+            buy =lianbuy;
+            introduces = lianintroduce;
+            pingfen = lianpingfen;
+            jiaotime = liantime;
         }
         if(name_receive1.equals("柘荣县")){
             name1 = zhename;
