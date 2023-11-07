@@ -151,29 +151,20 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "青岚湖水利风景区位于宁德市柘荣县，依托青岚水库而建，景区面积19.34平方公里，其中水域面积0.71平方公里，属于水库型水利风景区。区域内水体澄清，水质I级;负氧离子含量高，空气质量指数一级；森林覆盖率为86%,水土流失综合治理率高达96%；动植物资源丰富，生态环境优良。"};
 
     //福鼎市
-    private String[] Nantong = {"太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺"};
-    private int[] Nantongicons = {R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun,R.drawable.shilancun,R.drawable.chengbao,R.drawable.diantoumazu,R.drawable.fudingxiangshansi,R.drawable.tianmenlingyouqu,R.drawable.gubao,R.drawable.lingfengshi,R.drawable.qiyunshi,R.drawable.xiyanglaorenqiao,R.drawable.fuyao,R.drawable.ziguo};
-    private String[] Nantongbuy = {"¥90","¥35","¥25","¥325","¥37","¥10","¥50","¥30","免费","免费","免费","¥120","¥137","免费","免费","¥140","免费","免费","免费"};
+    private String[] Nantong = {"the Wolf Mountain","Seyuan Garden","Nantong Forest Safari Park","Zhang Jian Memorial Hall","Junshan Mountain","Yangkou port","Xiaoyangkoubeauty spot","HAOHE"};
+    private int[] Nantongicons = {R.drawable.wolfm,R.drawable.seyuan,R.drawable.amp,R.drawable.zj,R.drawable.junshan,R.drawable.yangkou,R.drawable.xiaoyangkou,R.drawable.haohe};
+//    private int[] Nantongicons = {R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun};
+    private String[] Nantongbuy = {"¥70","Free","¥180","Free","Free","Free","¥40","Free"};
     private String[] Nantongintroduce ={
-            "太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
-            "牛郎岗海滨这里气候冬暖夏凉，素以“碧海金沙好消夏”而吸引各地游客慕名而至。牛郎岗海滨沙滩平坦、明净，环山绿树成荫，周围礁石造型各异，有鸳鸯礁、织女洞、海上一线天等自然景观。",
-            "翠郊古民居是迄今为止在江南地区所发现的单体建筑面积大、保存完好的古民居，堪称江南古民居之杰作。位于福建省福鼎市20公里的白琳镇翠郊村翠郊，离太姥山大概两个小时左右的车程。",
-            "九鲤溪瀑景区是太姥山“山、海、川、岛”四大风景名胜区的重要组成部分，主溪流长25公里，汇集13条支流。溪流两岸，青山重回，绿树葱茏，怪石林立，碧如澄沏，水浅处，卵石游鱼，历历可数，舟行其间，如游画中。以田园风光见长，生态环境优美，成为闽东书画院的写生创作中心。荡涤都市尘埃，回归梦幻田园，乘筏漂流溪上，清凉逍遥。",
-            "位于福建东北沿海沙埕港以南小白鹭海湾的小白鹭海滨度假村，是由福鼎小白鹭海滨度假村开发有限公司投资开发建设的，以“渔文化民俗游”及“海滨沙滩休闲度假”为主体的海滨休闲度假区，也是国家重点风景名胜区太姥山的“山、海、川、岛”四大旅游休闲基地之一。",
-            "大嵛山岛地处福建东南海域部位，因其地理位置优越，一直都是南北船只的必经之地，具有极为重要的意义，主要又11个岛屿组成，现已开采出了大小天湖，白云飞瀑等别具风格的自然景观，是中国最美十大岛屿之一。",
-            "嵛山岛 ，素有“海上明珠”之称的，风光旖旎，有天湖泛彩、南国天山、海角晴空等胜景，被列为世界地质公园太姥山风景区四大景观之一，被评为全国十大最美海岛之一。大天湖面积1000多亩，小天湖200多亩，两湖相隔1000多米，各有泉眼，清澈见底。湖四周山坡平缓，是有“南国天山”之誉的万亩草场。",
-            "赤溪村位于福鼎市磻溪镇东南部，与霞浦相毗邻，距福鼎市区65公里，离集镇23公里，处名胜风景区太姥山境内，对外交通较为便利。赤溪村是“中国扶贫第一村”，也是少数民族村。其依靠九鲤溪这一生态旅游资源，吸引了来自浙江及闽东各地的许多游客，尤其是假节日、周末更多，显得十分热闹。",
-            "石兰村，位于福鼎市硖门畲族乡双狮山后脊，其是一座具有千年历史的城堡式古村落，城堡建筑保存完好，并有被国家林业局列入中国树木奇观的奇特古榕给古堡增添了色彩。其作为历史文化名村，保存着丰富的历史文化遗产和自然景观，吸引了国家、省、市各级各界人士目光，并纷纷撰文、摄影、报道，推动了石兰历史文化名村的宣传和建设。",
-            "潋城城堡位于福建福鼎市秦屿镇潋城村。明嘉靖十一年，为抵御倭寇，朝廷委派官员监建，由王、叶、杨、刘等几个大姓分段建城堡。城堡石构，1127米周长，城墙高5～6米，宽4～5米。垣墙高1.5米，厚1.2米；环城设四座炮台，配备四门炮；有东、西、南三个城门，城内有环城路、古街等，水道四通八达；城外有护环城河。",
-            "点头妈祖宫，位于福鼎市点头镇海乾路。始建于明代，清康熙年间重建，乾隆二十年重修。头妈祖宫该宫为砖木结构，硬山顶，由亭阁、天井、厢廊、大殿等组成。其宫前大埕开阔，立有两支青石旌表，高约十米，系清光绪年间为褒扬妈祖有功于民而建立之旌表。上部有石斗，刻\"天上圣母\"四字，底座铭文分别为\"光绪二年丙子季秋吉旦\"，右为\"十五都扆山点头社公建\"。",
-            "福鼎香山寺游览区位于太姥山西侧，其始建于明朝，原名“妙香庵”。大雄宝殿前有块巨石叫“犀牛望月”，牛颈有一天然岩洞叫“犀牛洞”，洞壁上有一联：“秀句满江国，芳声腾海隅”，乃清户部尚书，同治、光绪皇帝的老师翁同龢所题，旧时佛堂就建在犀牛洞内。香山寺周围的山谷盛产兰花，花开时节，幽香阵阵，故寺名叫“香山寺”。",
-            "天门岭游览区位于福建省福鼎市秦屿镇太姥山景区内，从国兴寺起沿着麒麟岗一直盘旋抵至天门寺，全长有2.3公里，于2000年开发修筑的。这条岭外侧林木葱茏，内侧峭壁如削，沿途风景秀丽，岩石景观目不暇接，让人如同行走在充满野趣情调的山荫道上。",
-            "冷城古堡位于福鼎市秦屿镇冷城村，建于明嘉靖年间，为抵御倭寇而筑。其外形呈圆形，砖石结构，绕村一圈，周长1127米，高5.6米，厚4.67米。设有东门、西门、南门三道城门，至今保存完好。城内古街、民居、山墙、小巷，古香古色。城中尚有三官堂、猴仙宫等古迹，以及冷城农民暴动等革命遗址。",
-            "灵峰寺位于福建省福鼎市境内的太姥山，毗邻东海，壤接江浙，雄镇东南，府控吴越。建于唐太宗贞观三年，宋淳熙十六年遭火焚，明天启七年重建，清光绪十年重建，占地1500平方米，坐北朝南。四周古木障天，树影娑婆，仿古建筑群恢宏壮观、幽深清逸，令人心驰神往。",
-            "国兴寺位于福建省福鼎市秦屿镇太姥山，其始建于唐乾符四年（877年），废于宋。据志书记载尚存石柱360根，占地面积为二千五百平方米，三面环水，一面背山，有七根大石柱立于地面，基座为覆盘莲花础，中轴通道旁有唐、宋石雕，内容有花草、神兽等。有宋石斛四个，残缺碑刻多方。1989年1月公布为县首批文物保护单位。民国年间重修。现在大雄宝殿、太姥殿、僧舍等建筑。",
-            "西阳老人桥位于福鼎市管阳镇西阳村桥头自然村，始建于明正德年间(1506—1521)，清康熙、同治年间重修， 其是一座木结构的弧形古式桥梁，横跨于溪潭上，规模颇具壮观，系福鼎市现存唯一的木构虹梁式廊屋桥， 为县级文物保护单位。",
-            "瑶列岛国家级海洋公园位于福鼎巿东南部，总面积6783公顷，其中重点保护区3330公顷，适度利用区2186公顷，预留区1267公顷。福瑶列岛由大箭山、小箭山、鸳鸯岛、银屿、鸟屿等11个岛屿和九个礁石组成，总面积24.5平方公里。古称福瑶列岛，意即\"福地、美玉”。其海洋生态旅游度假区包括天马公路、天湖原始生态别墅区、大使澳休闲区、高速游轮等。2016年11月9号，国家海洋局批准建立3个国家级海洋特别保护区、10个国家级海洋公园，宁德市福瑶列岛获批建立国家级海洋公园。",
-            "资国寺为闽东千年古刹，也是福鼎市原六大寺之一。现总体面积 1000多亩，常住僧众近200人。位于福鼎市东南郊，距城五公里的莲蜂山上，建于唐咸通元年( 860 )。寺为唐冠庄叶庞兄弟所建，并施舍周围所有山场。宋大全祖师重兴，相传有九井十三墩，为鼎盛时期。明重建法堂，明中期本邑玉塘夏姓一支系施白金一百两助建大雄宝殿。清乾隆年间，重修祖师殿。光绪十六年( 1890 )，兴建伽蓝殿。"};
+            "Nantong Wolf Mountain Scenic Area, located at the street of Wolf Mountain Town, Chongchuan District, Nantong City, Jiangsu Province, is a provincial scenic area of Jiangsu Province and a national AAAA scenic area. It is located on the north bank of the Yangtze River, six kilometers south of Nantong City.",
+            "It is the largest plant ornamental garden in Nantong, Jiangsu Province, with more than 200 kinds of rare tree species, including davidia davidia and Taiwan fir. It is an ecological garden with the best air quality and the highest negative ion content, and is known as \"urban oxygen bar\".",
+            "Nantong Forest Safari Park is a large-scale comprehensive tourism project integrating tourist attractions, circus performance, characteristic catering, leisure and entertainment and popular science education. It has three kinds of tour modes: car tour, walking tour and boat tour.",
+            "Zhang Jian Memorial Hall, located in Changle Town, Haimen District, Nantong City, Jiangsu Province, was built in memory of Mr. Zhang Jian.",
+            "Junshan is a mountain in Chongchuan District of Nantong City, Jiangsu Province. When it was an island in the sea, it was said that it was a place for the King of Qin to camp troops. Overlooking Junshan, mountains and rivers naturally form a bagua map.",
+            "Yangkou Port, located in Changsha Town, Rudong County, Jiangsu Province, is a typical offshore deep-water port. Yangkou Port is located in the north wing of the Yangtze River estuary and the west bank of the Yellow Sea. It uses the ancient Yangtze River estuary channel to access the international shipping route of the Yellow Sea.",
+            "Nantong Xiaoyangkou Scenic Spot is located in Rudong Coastal Tourism Economic Development Zone, Jiangsu Province, 120km away from Shanghai, within 1.5 hours of the economic circle; 60km from Nantong, 1 hour by car.",
+            "Haohe Scenic Area of Nantong City, located in the center of the national historical and cultural city Nantong, is one of the most complete preserved ancient moat in China, the history of the late Zhou Xiande five years (AD 958), \"there is a river\", a total length of 10 kilometers, 1040 acres of water, the widest point 215 meters, the narrowest point only 10 meters.",
+            };
 
     //霞浦县
     private String[] xiapu = {"杨家溪","罗汉溪景区","赤岸村","霞浦松山天后圣母行宫","空海大师纪念堂","霞蒲滩涂","北岐滩涂","霞浦县城","小皓海滩","七都溪"};
