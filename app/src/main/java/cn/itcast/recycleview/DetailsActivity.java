@@ -1596,265 +1596,106 @@ public class DetailsActivity extends AppCompatActivity {
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
         }
-        if(name.equals("福安白云山")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/baiyunshan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/9.png");
+        if(name.equals("Mount Huaguoshan")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/6a600c338744ebf899ff903fdef9d72a6059a720?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/faf2b2119313b07e5433a4080bd7912397dd8c20?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/77094b36acaf2edd0c7fbde98a1001e939019320?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("兰谷温泉度假村")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%85%B0%E8%B0%B7%E6%B8%A9%E6%B3%89%E5%BA%A6%E5%81%87%E6%9D%91/langu.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E5%AF%BF%E5%AE%81%E5%8E%BF/%E8%BD%A6%E5%B2%AD%E5%8F%A4%E9%81%93/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/9.png");
+        if(name.equals("Haizhou Ancient City")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/503d269759ee3d6d35007b5448166d224e4ade6f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/10dfa9ec8a1363270e6a43ac9a8fa0ec09fac7ae?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/9e3df8dcd100baa1c984c7244c10b912c9fc2e80?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("天池草场")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/tianchi.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E6%B1%A0%E8%8D%89%E5%9C%BA/8.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("金山大峡谷")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/jinshan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%87%91%E5%B1%B1%E5%A4%A7%E5%B3%A1%E8%B0%B7/8.png");
+        if(name.equals("KongWang Mountains")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/0b46f21fbe096b636c3df5e602338744ebf8ac64?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/37d3d539b6003af38a9e77d63b2ac65c1038b664?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/b999a9014c086e06696597fd0c087bf40bd1cbb3?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("狮峰寺")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/shifengshi.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%8B%AE%E5%B3%B0%E5%AF%BA/9.png");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("廉村")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/liancun.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%BB%89%E6%9D%91/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("穆云畲族乡")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/shezu.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A9%86%E4%BA%91%E7%95%B2%E6%97%8F%E4%B9%A1/9.png");
+        if(name.equals("YunTai Mountains")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/f2deb48f8c5494ee55d2db1023f5e0fe98257ec3?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/6d81800a19d8bc3e0e02d3c38c8ba61ea8d345b5?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/9345d688d43f879445729c27dc1b0ef41bd53a2e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
         }
-        if(name.equals("闽东革命纪念馆vmt")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/mindonggeming.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E9%97%BD%E4%B8%9C%E9%9D%A9%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86/9.png");
+        if(name.equals("Taohuajian Mountain Stream")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/d788d43f8794a4c25ea1729d00f41bd5ac6e3981?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/c2cec3fdfc039245c91d74b98994a4c27c1e25df?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/b3119313b07eca80dc87ac519f2397dda0448382?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("福安文化馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/baiyunshan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E7%99%BD%E4%BA%91%E5%B1%B1/8.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("柏柱洋红色旅游景区")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/yanghongse.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%9F%8F%E6%9F%B1%E6%B4%8B%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/7.png");
+        if(name.equals("Eden Garden")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/962bd40735fae6cd7b892c6117fe182442a7d933a1d4?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/d1160924ab18972bd4079acafe806c899e510fb39cd4?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/aa18972bd40735fae6cdcab9861c18b30f2442a7a2d4?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("福安市博物馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/fuanbowuguan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
+        if(name.equals("LianYunGang Museum")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/9213b07eca8065389df4453794dda144ad3482fc?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/4a36acaf2edda3ccddb3590402e93901213f92bb?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/faedab64034f78f0e8717bd77a310a55b3191c9f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+        if(name.equals("Qinshan Island")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/6a63f6246b600c333f226c6f104c510fd9f9a13a?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9aa2449573301213fb80e9136?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/e7cd7b899e510fb34534de96d933c895d1430c85?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+        if(name.equals("And Lake Wetland Park")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/a50f4bfbfbedab64ffe98d80f436afc378311ed3?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/c9fcc3cec3fdfc03460923f8d73f8794a4c22679?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/11385343fbf2b211ff7a450ec98065380cd78e1e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+        if(name.equals("Dayi Mountains")){
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/6c224f4a20a446235a374bfb9522720e0df3d7ae?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/bf096b63f6246b600c33266765af0d4c510fd9f904d2?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto");
+            imagePath.add("https://bkimg.cdn.bcebos.com/pic/242dd42a2834349b033bf69647bd02ce36d3d53910d2?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+
         if(name.equals("柘荣鸳鸯草场")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E9%B8%B3%E9%B8%AF%E8%8D%89%E5%9C%BA/zherong.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E9%B8%B3%E9%B8%AF%E8%8D%89%E5%9C%BA/3.png");

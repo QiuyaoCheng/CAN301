@@ -36,6 +36,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
     private int[] icons = {};
     private  String[] buy = {};
     private  String[] introduces = {};
+
     //蕉城区
     private String[] jiao = {"三都澳","霍童古镇","宁德东湖水利风景区","福建支提山国家森林公园","宁德洋中水利风景区","宁德蕉城区上金贝中华畲家寨","洪口水库","宁德鹤林宫","宁德市博物馆"};
     private int[] jiaoicons = {R.drawable.sanduao,R.drawable.huotongguzheng,R.drawable.shuili,R.drawable.senglin,R.drawable.yangzhong,R.drawable.shangjinbei,R.drawable.hongshui,R.drawable.helin,R.drawable.bowuguan};
@@ -50,6 +51,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
     "洪口水电站位于宁德市洪口乡境内霍童溪干流峡谷河段，是霍童溪干流梯级开发的第六级水电站,。洪口水电站水库正常蓄水位165米，水面面积8.92平方公里，坝址以上主河道长86.3千米，控制流域面积1701平方公里，约占霍童溪流域面积的75.8%。大坝设计为混凝土碾压重力坝，坝高130米，顶长340米。从坝址至水库末端长约17.22千米，总库容4.497亿立方米。",
     "根据宁德市志、支提图志、宁德文史和霍童各姓氏宗谱的记载，并参考霍童文史等资料，进行探索累集摘录之。鹤林宫位于第一洞天，是中国道教南方发祥地——“霍林洞天”，古时为道教四大名宫之一。其位于福建闽东宁德西北部的霍童山大童峰居五岳之首。考霍童得名，源于三千年前西周时有——霍桐真人\"炼修隐居霍童山丛林中，故号°霍林洞天\"”。《洞天志》云:洞天别有天地，后户可透\"金陵大茅山\"。洞口高丈许，广盈十筋。下极平坦，中有一窟，泉味如醴，旁有小径，黯然纡曲，人迹难到。",
     "宁德市博物馆（闽东畲族博物馆）隶属宁德市文化与出版局，是一家以收藏、展示、研究宁德历史文物和闽东畲族文物为宗旨的综合性博物馆。生动展示了宁德的悠久历史和灿烂文化。闽东畲族文物陈列则以丰富的馆藏内容，从宗教祭祀、服装首饰、生产用具、生活用具和工艺品等方面展示了畲族的婚礼、不同地区不同样式的传统服饰以及生产生活习俗等面貌，为观众了解畲族历史和传统文化提供一个直观而又生动的视角。"};
+
     //古田县
     private  String [] gu = {"古田钱来山景区","翠屏湖","齐云寺","古田溪山书画院","长洋徐氏古民居群","金钟湖山庄","凤林祠","蝉林祠","圆瑛故居","古田临水宫"};
     private int[] guicons = {R.drawable.gutianxian,R.drawable.cuipinghu,R.drawable.qiyunshi,R.drawable.gutianxishan,R.drawable.changyangxunshi,R.drawable.jinzhonghushanzhuan,R.drawable.fenglinshi,R.drawable.changlinshi,R.drawable.yuanyinguju,R.drawable.gutianlinshuigong};
@@ -64,6 +66,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "蝉林祠位于古田县杉洋镇西北3公里的狮岩山麓。该祠坐北向南，木构建筑，占地1321.80平方米。中轴线上依次为大门，华表门亭、下游廊、前天井、中在厅、后天井、祖祠厅。",
             "圆瑛故居位于平湖镇端上村，始建于明末崇祯年间。端上开祖文昌公，开村第一屋至今400多年，属明代样式二层木结构。主楼长10.5米，宽5.5米，计面积115.5平方米；其侧房为4Ｘ4米二层楼，计面积32平方米；总计面积147.5平方米。圆瑛居住此屋系圆公祖上遗产。只知圆公爷、父辈三代住进此屋。圆公是开村第十一代后裔，圆公生母阙氏。圆公生于1878年５月12日，居住时间：出生至14岁在此屋居住。15-17岁到古田求学中秀才，18岁游涌泉寺并出家，19岁在家养病，20岁重新出家即1897年。从此离开此屋不复返，距今112年。此屋此后交由堂侄吴贞玉看管、居住。贞玉于上世纪70年代搬出，此屋至今休闲已有30余载。",
             "临水宫是一座风格别致的仿唐代宫殿建筑，始建于唐贞元八年（公元792年），后经元明清历代重修扩建，至今已有1200多年的历史，是分布国内外各地临水宫的祖殿，被福建省人民政府列为省级文物保护单位，现已列入国家级文物保护单位。临水宫是祀典道教女神，海内外公认的“顺天圣母”陈靖姑的宫殿。"};
+
     //屏南县
     private  String [] pingnan = {"白水洋","鸳鸯溪","大棠滑草场","际头耕读文化大观园","漈头古村","纱帽岩","万安桥","百丈漈瀑布","仙山牧场","鼎潭仙宴谷","国家地质公园","观景台","仙女瀑"};
     private int[] pingnanicons = {R.drawable.baishuiyang,R.drawable.yuanyangxi,R.drawable.datang,R.drawable.daguangyuan,R.drawable.cuijiao,R.drawable.shamaoyan,R.drawable.wanganqiao,R.drawable.tianchi,R.drawable.dayushan,R.drawable.jiulong,R.drawable.gutianlinshuigong,R.drawable.guanjingtai,R.drawable.xiannvpu};
@@ -82,6 +85,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "观景台是依山而建、因势而上，像一艘巨轮泊岸。观景台，顾名思义就是揽胜白水洋的平台。观景台内部拥有医疗救护点、超市、休闲区和寄存更衣等设施。为游客免去负担，而站在观景台上眺望平平展展的白水洋，凭栏远眺，偌大个浅水广场，尽收眼底。绿涛唤白浪，山风吹水韵，让人心旷神怡。放眼上洋双龙桥横架两岸，构成了一幅青山、流水、古桥浑然一体的唯美画卷。",
             "仙女瀑是个三级瀑布，借想象会发现三重水瀑相叠像一个仙女正端坐于幽谷中沐浴梳妆，清澈的山水从高处落下，拍打在石头上，变成了一片片白色的水花，走近了都有一股凉意。到了远处，水流没有那么湍急了，仙女瀑没有黄山瀑布那波澜壮阔的气势，也没有泰山瀑布那一泻千里的声威。他只是静静地向下流着，不时地在与岩石的撞击中飞溅出几朵小小的水花"
     };
+
     //周宁县
     private String[] zhou = {"鲤鱼溪","九龙漈风景名胜区","陈峭古村","周宁滴水岩","林公忠平王祖殿","周宁般若寺","九龙石窟","高山明珠","浦源郑氏宗祠"};
     private int[] zhouicons = {R.drawable.liyuxi,R.drawable.jiulongfengjingmingshengqu,R.drawable.chenxiaogucun,R.drawable.zhouningdishuiyan,R.drawable.zudian,R.drawable.zhouningbanruosi,R.drawable.jiulongshiku,R.drawable.gaoshanmingzhu,R.drawable.puyuanzongsi};
@@ -96,6 +100,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "周宁境内峰峦翠，玉带缠绵，钟云毓秀，如诗胜画，是一块令人神往的旅游胜地。境内风光秀丽，旅游资源得天独厚。九龙际瀑布群雄伟壮阔，气势磅礴，荣膺省级首批十大名胜风景区之盛誉；鲤鱼溪神鳞戏水，人鱼同乐，令游人流连忘返；滴水岩泻珠溅玉，水滴石穿，史称“八闽首景”；即将建成的库容3.2亿立方米的高山人工湖令人神往；千年古刹灵峰寺、方广寺山深庙古，闻名遐迩......全县平均海拔800米，县城海拔888米，冠全省之首，冬无严寒，夏无酷署，盛夏日均气温仅24摄氏度，享有“天然空调城”的美誉，是旅游、度假、避暑的好去处。",
             "南宋嘉定二年（1208）始建，明洪武十八年（1387）重建，清道光十年（1830）、光绪二年（1876）重修。平面前窄后宽，呈船形，为三进式传统宗祠建筑，由门厅、戏台、次厅、主厅等组成，建筑面积1830.2平方米。大门外两侧有清咸丰九年（1859）设置的旗杆石4对，祠内有泥塑7尊、木雕神祖牌及名人匾额等。",
             };
+
     //寿宁县
     private String[] shou = {"犀溪漂流","西浦","灵峰禅寺","南山风景区","下党村","小托水库水利风景区","寿宁县生态茶园","犀溪","中共闽东特委含溪旧址","车岭古道"};
     private int[] shouicons = {R.drawable.xixi,R.drawable.xipu,R.drawable.lingfeng,R.drawable.nanshan,R.drawable.xiadangcun,R.drawable.shuikufengjingqu,R.drawable.shengtaichayuan,R.drawable.xi,R.drawable.mindongjiuzhi,R.drawable.chelinggudao};
@@ -111,21 +116,23 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "包括含溪闽东特委旧址、瓦窑坪红军标语、瓦窑坪红军洞等。中央红军长征后，闽东苏区与党中央失去了联系，局势十分严峻。1935年5月，中共闽东临时特委委员叶飞在含溪召开紧急会议，重新建立中共闽东特委，下辖霞鼎等4个中心县委和14个县委，领导闽东地区坚持了三年游击斗争。",
             "车岭古道位于寿宁县斜滩镇斜滩村、清源乡阳尾村，年代为明至清。明中叶形成，由明迄清历代维修，是寿宁通往福宁府的重要古官道。古道自斜滩蜿蜒而上，相对高差658米，全长约10公里。山路用石块随地形铺就，宽1到2米，沿途分布多处路亭、摩崖石刻、关隘，主要有车岭关、一亭、“岭峻云深”石刻、二亭、三亭、四亭遗址、五亭遗址、“去思碑”石刻、平氛关、龙凤亭等。"
     };
+
     //福安市
-    private String[] lian = {"Mount Huaguoshan","","KongWang Mountains","YunTai Mountains","Taohuajian Mountain Stream","Eden Garden","LianYunGang Museum","Qinshan Island","And Lake Wetland Park","Boat Mountain waterfall"};
-    private int[] lianicons = {R.drawable.baiyunshan,R.drawable.langu,R.drawable.tianchi,R.drawable.jinshan,R.drawable.helin,R.drawable.liancun,R.drawable.shezu,R.drawable.mindonggeming,R.drawable.mindonggeming,R.drawable.yanghongse,R.drawable.fuanbowuguan};
-    private String[] lianbuy = {"Free","¥98","¥30","¥38","免费","免费","免费","免费","免费","免费","免费"};
-    private String[] lianintroduce ={"福建福安白云山，国家风景名胜区、国家4A级旅游景区、世界地质公园、国家地质公园。位于福建省福安市西北部穆云乡、晓阳镇境内，距福安市区约40公里。",
-            "兰谷温泉位于溪潭镇兰田村，福安西高速出口300米处，距离福安市区仅6公里，占地面积3.3万平方米。依山而建，总计划投资8000万元，规划有室内外温泉池58个。一期已投入2000万元，以畲医药养颜养生温泉为主题，开发有26个不同主题的养生药泉，二期将重点开发院落式私家温泉，给福安人一个家门口的“治愈系”温泉度假胜地。",
-            "天池草场位于福建省福安市松罗乡东山之巅，环境优美，可朝看日出，夕赏晚霞，晴观蓝天白云，雨观云海虹霓，置身连绵起伏的广袤草坪，仿佛临登仙界。景区内设亲子园、拓展园、萌宠园及多种新型游乐设备，服务设施齐全，是亲子、度假、避暑、学研的好去处。",
-            "金山大峡谷生态风景区是位于福安市松罗乡东北部，距福安市区仅40余公里，景区游览路线全长3.5公里。金山大峡谷是集运动、体闲、观光、娱乐、养生于一体的乡村生态自然风景区。\n",
-            "狮峰寺又称狮峰广化禅寺，位于福安市柏柱洋狮峰山麓，距县城30公里。坐西朝东，傍山而立，建筑雄伟。虽时历千年而庙貌尚存。为闽东佛教千年古刹，属闽东佛教历史最早、规模最大的寺院之一。大殿建筑风格独特，历史价值极高，属国内罕见，1985年10月作为革命旧址被福建省政府核定为第二批省级文物保护单位，2006年5月25日由国务院核定并公布为第六批全国重点文物保护单位。此外，寺中还留有大量丰富的历代文人墨客的名作佳句。1991年，全国政协副主席、中国佛教协会会长赵朴初居士亲题寺名\"“狮峰寺”三字。",
-            "廉村位于福建宁德福安市溪潭镇。廉村原名石矶津，是唐朝福建第一个进士薛令之的故乡。廉村被喻为开闽进士第一村，位于福安市溪潭镇穆阳溪中游西岸，旧名富溪津、石矶津，因里人薛令之是福建第一位进士,且为官清廉，被御赐\"廉村\"、“廉水\".“廉岭\"之名。村内主要文物古迹有:明清时期的廉村城墙、陈氏宗祠、陈氏支祠、后湖宫、妈祖庙、陈树安宅、陈住松宅、“聪明泉\"、薛令之故居、薛令之读书处古码头等。传统产业主要是田草织席等。溪潭廉村还有宋代城堡建筑群、宋将陈最墓，赛岐苏阳明将刘中藻墓，康厝东山雪洞等。",
-            "穆云畲族乡地处福安市西部，下辖33个村民委员会，其中纯畲族村14个，回族村1个，畲汉杂居村7个。地理交通便利，区位f势明显，省道下浦线、县道福穆线和正在建设中的宁武高速公路贯穿全境，白云山互通口设于桂林村，是福安市\"一市三区六团\"发展布局之生态旅游经济区的重要组成部分。茶叶、穆阳水蜜桃、刺葡萄是农业三大主导产业。全乡茶园面积达10000多前刺葡萄面积6000多亩。境内自然风光瑰丽神奇，独树一帜。国家AA级景区、全省农业旅游示范点-溪塔葡萄沟风景区集农业观光、畲族风情于一体，名闻遐迩。",
-            "闽东革命纪念馆馆藏品有从马列主义传播到轰轰烈烈大革命，从工农武装割据、创建闽东苏区到坚持艰苦卓绝的三年游击战争，从奔赴民族解放战争的战场到解放福建期间曾经在这块土地上战斗过的陶铸、叶飞、粟裕、曾志、范式人、杨采衡、陈挺、左丰美等老一辈革命家的照片、家书、传单、书、刊、佩刀、印匣、印、衣服、台灯、砚台、墨盒、矛、戈等革命文物。",
-            "福安文化馆现有馆舍三层，总面积达3432平方米。全馆设有文学、音乐、舞蹈、戏曲、美术、摄影等课程，有大、中型排练厅、表演厅、展览厅等。现有工作人员14人，其中副研究员1人、中级馆员6人、助理馆员3人、管理员4人。2008年举办大、中型歌曲、戏剧、小品等文艺晚会30多场，举办大型文化艺术展览10多场，组织文化理论研讨活动和对外交流活动15场次。近年来创办了6个文艺艺术创作基地和4个未成年人文化活动基地，创建了2个美术、舞蹈培训中心。",
-            "柏柱洋红色旅游景区是福安溪柄镇旅游发展的核心所在，其独具特色的红色旅游资源是当地旅游的“金名片\"”。该景区位于溪柄镇东南方，距市区30公里，被誉为“闽东延安”。邓子恢、叶飞、陶铸、曾志、马立峰、阮英平、詹如柏等革命前辈在此创建中共闽东特委、闽东苏维埃政府。该景区以红色旅游为主题，集\"红、绿、俗、古、廉\"旅游资源于一体，于2011年被列入国家\"十二五'红色旅游规划名单，中共闽东特委旧址被纳入全省7个红色旅游经典景区。",
-            "福安市博物馆位于福安市公园路58号，成立于2004年6月8日,其前身为成立于建国初期的福安市文化馆文物室，人员编制2名,在福安市文体局办公楼内办公。福安市博物馆职责以发现、珍集、收藏、保护、研究与展示宣传历史文化遗产，传播有益于社会进步的思想、道德、科学技术和文化知识，繁荣中华文化事业，推动社会主义精神文明建设，发挥社会教育功能，丰富人民的精神文化生活，提高公众素质。"};
+    private String[] lian = {"Mount Huaguoshan","Haizhou Ancient City","KongWang Mountains","YunTai Mountains","Taohuajian Mountain Stream","Eden Garden","LianYunGang Museum","Qinshan Island","And Lake Wetland Park","Dayi Mountains"};
+    private int[] lianicons = {R.drawable.huaguoshan,R.drawable.haizhou,R.drawable.kongwang,R.drawable.yuntai,R.drawable.taohua,R.drawable.yidian,R.drawable.lianyunbo,R.drawable.qinshandao,R.drawable.hean,R.drawable.dayi};
+    private String[] lianbuy = {"¥90","¥50","¥40","¥80","¥30","¥60","Free","Free","Free","¥30"};
+    private String[] lianintroduce ={
+            "Huaguo Mountain, located at the foot of south Yuntai Mountain in Lianyungang City, Jiangsu Province, the Tang and Song dynasties called Cangwu Mountain, also known as Qingfeng top, the main peak of Yuntai Mountain, is the highest peak of Jiangsu mountains. Huaguo Mountain has 136 peaks, the main peak of Huaguo Mountain is Jade peak, elevation 624.4 meters.",
+            "Haizhou is the source, origin and starting point of Lianyungang. Haizhou Ancient City is located in the southwest of Haizhou District, Lianyungang City, Jiangsu Province. With a history of more than 2,000 years, the ancient city has been the political, economic and cultural center of Hai, Gan, Shu and Guan regions since the Qin and Han Dynasties.",
+            "Kongwang Mountain is located in the east of Haizhou Ancient City, Lianyungang City, Jiangsu Province. Kongwang Mountain, a national 4A-level scenic spot, is a thousand-year unique mountain in the annals of Chinese culture because Confucius climbed the mountain and looked at the sea.",
+            "Yuntai Mountain on the Sea (national AAAA tourist attraction, National scenic area, National Forest Park, China's top Ten villages and towns slow tour), located in Sucheng Street, Lianyun District, Lianyungang City, Jiangsu Province, is a famous tourist resort along the Jiangsu coast. This mountain was originally an island in the sea, and then evolved into land.",
+            "Taohuajian is located at the southern foot of Jinping Mountain, and Taohuajian is 9 kilometers away from Lianyungang City. In 2014, it was rated as an \"AAAA\" scenic spot by the National Tourism Administration. The Jiangjun Cliff petroglyphs in the scenic area are national key cultural relics protection units and the pilgrimage center of the Dongyi people 7,000 years ago.",
+            "Eden Scenic Area is located 3.5 kilometers east of Guanyun County, Lianyungang City, Jiangsu Province, close to National Highway 204, and Lianzhen high-speed railway passes through the scenic spot. The scenic area covers an area of 10,000 acres, including 6,500 acres of pear orchards, 3,200 acres of hundred gardens, and about 300 acres of Danish fairy tale town, Sciroc Le City, tourist service center, etc.",
+            "Lianyungang Museum, located at No. 68, Chaoyang East Road, Haizhou District, Lianyungang City, Jiangsu Province, covers an area of 45 acres, with a construction area of 13,600 square meters, and belongs to the Lianyungang Municipal Bureau of Culture, Radio, Television and Tourism.",
+            "Qinshan Island is one of the few near-shore islands in Jiangsu Province, about 8 kilometers away from Ganyu Binhai New City and 10 kilometers away from Haitou Port, with an area of about 0.19 square kilometers and a coastline length of about 2.8 kilometers. There are more than 20 major scenic spots on the island, such as Chess Bay, Qinshan Shenlu, Shouzhutai and Xu Fujing, which have always enjoyed the reputation of \"Qinshan Ancient Island, Yellow Sea Wonderland\".",
+            "And Lake Wetland Park is a typical wetland ecosystem, with abundant terrestrial and aquatic animal and plant resources, excellent water quality and a wide variety of plant species. The combination of a natural and wild ecological wetland system and an innocent and rustic pastoral landscape.",
+            "Dayi Mountain is a national 4A-level scenic spot, known as the first sacred mountain in Pingchuan, Huaibei. It belongs to the exposed Archean and Middle Proterozoic strata, and is a very ancient metamorphic rock hilly landform structure."};
+
     //柘荣县
     private String[] zhe = {"柘荣鸳鸯草场","九龙井","宁德东狮山","仙都胜境景区","柘荣县九龙井水利风景区","东源古建筑群","凤岐吴氏大宅","百丈岩八仙洞","蟠桃映翠","青岚湖水利风景区"};
     private int[] zheoicons = {R.drawable.zherong,R.drawable.jiulongjing,R.drawable.dongshishan,R.drawable.xiandujingqu,R.drawable.zherongjiulong,R.drawable.dongyuangujianzhu,R.drawable.fengqiwushidazhai,R.drawable.baizhangyanbaxiandong,R.drawable.pantao,R.drawable.qinglanfengjingqu};
@@ -140,6 +147,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "百丈朝暾景区位于风景区中部，蟠桃映翠景区的东北面，面积约3.54平方公里，以绝岩峭壁，幽深洞岩为景观特色，主要景点有：罗隐湾、土地岩、清云宫、石门、石将军、风吹洞、石门楼、仙人脚印、观日台、灵岩洞、通真洞、灵峰洞、何仙姑洞、百丈灵岩等。",
             "蟠桃映翠景区位于风景区中西部，面积约1.88平方公里，以溪涧风光为景观特色，洞奇石怪，风景资源多而集中。主要景点有：迎宾亭、仙景岭、普光寺、仙掌泉、蟠桃溪、蟠桃岩、金蟾朝圣、蟠桃洞、马头岩、象鼻岩、玉屏洞、南天门、三曹院遗址、白马宫等。",
             "青岚湖水利风景区位于宁德市柘荣县，依托青岚水库而建，景区面积19.34平方公里，其中水域面积0.71平方公里，属于水库型水利风景区。区域内水体澄清，水质I级;负氧离子含量高，空气质量指数一级；森林覆盖率为86%,水土流失综合治理率高达96%；动植物资源丰富，生态环境优良。"};
+
     //福鼎市
     private String[] fuding = {"太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺"};
     private int[] fudingoicons = {R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun,R.drawable.shilancun,R.drawable.chengbao,R.drawable.diantoumazu,R.drawable.fudingxiangshansi,R.drawable.tianmenlingyouqu,R.drawable.gubao,R.drawable.lingfengshi,R.drawable.qiyunshi,R.drawable.xiyanglaorenqiao,R.drawable.fuyao,R.drawable.ziguo};
@@ -163,6 +171,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "西阳老人桥位于福鼎市管阳镇西阳村桥头自然村，始建于明正德年间(1506—1521)，清康熙、同治年间重修， 其是一座木结构的弧形古式桥梁，横跨于溪潭上，规模颇具壮观，系福鼎市现存唯一的木构虹梁式廊屋桥， 为县级文物保护单位。",
             "瑶列岛国家级海洋公园位于福鼎巿东南部，总面积6783公顷，其中重点保护区3330公顷，适度利用区2186公顷，预留区1267公顷。福瑶列岛由大箭山、小箭山、鸳鸯岛、银屿、鸟屿等11个岛屿和九个礁石组成，总面积24.5平方公里。古称福瑶列岛，意即\"福地、美玉”。其海洋生态旅游度假区包括天马公路、天湖原始生态别墅区、大使澳休闲区、高速游轮等。2016年11月9号，国家海洋局批准建立3个国家级海洋特别保护区、10个国家级海洋公园，宁德市福瑶列岛获批建立国家级海洋公园。",
             "资国寺为闽东千年古刹，也是福鼎市原六大寺之一。现总体面积 1000多亩，常住僧众近200人。位于福鼎市东南郊，距城五公里的莲蜂山上，建于唐咸通元年( 860 )。寺为唐冠庄叶庞兄弟所建，并施舍周围所有山场。宋大全祖师重兴，相传有九井十三墩，为鼎盛时期。明重建法堂，明中期本邑玉塘夏姓一支系施白金一百两助建大雄宝殿。清乾隆年间，重修祖师殿。光绪十六年( 1890 )，兴建伽蓝殿。"};
+
     //霞浦县
     private String[] xiapu = {"杨家溪","罗汉溪景区","赤岸村","霞浦松山天后圣母行宫","空海大师纪念堂","霞蒲滩涂","北岐滩涂","霞浦县城","小皓海滩","七都溪"};
     private int[] xiapuoicons = {R.drawable.yangjiaxi,R.drawable.luohanxi,R.drawable.chianqiao,R.drawable.shengmuxinggong,R.drawable.jiniantang,R.drawable.xiaputantu,R.drawable.beiqitangtu,R.drawable.xiapuxiancheng,R.drawable.xiaohaohait,R.drawable.qiduxi};
@@ -333,7 +342,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县",
             "周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县",
             "寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县",
-            "福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市",
+            "Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang",
             "柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县",
             "福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市",
             "霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县"
@@ -407,7 +416,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             buy = shoubuy;
             introduces = shouintroduce;
         }
-        if(name_receive.equals("福安市")){
+        if(name_receive.equals("Lianyungang")){
             name = lian;
             icons = lianicons;
             buy = lianbuy;

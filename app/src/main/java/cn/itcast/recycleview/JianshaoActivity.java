@@ -1,7 +1,6 @@
 package cn.itcast.recycleview;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -37,18 +36,15 @@ public class JianshaoActivity extends AppCompatActivity {
             "        三都澳斗姆风景区坐落斗帽岛，荟萃三都澳美景，岛上奇石遍布，有名扬海内的中国沿海一大奇观——螺壳岩，有迷宫洞、斗姆石城、犀牛望月，个个鬼斧神工，惟妙惟肖。凿于悬崖绝壁上的海滨栈道，是一处赏海绝境。斗帽岛还是斗姆娘娘的圣地，那里有许多古老而神奇的传说，让你仿佛置身神话般的世界。",
             "        这里渔户相连，绵延数十公里，被称为“东方威尼斯”。海上渔城有街巷、门牌，有社区管理机构、警察、移动通信营业厅，有百货批发部、酒楼、卡拉OK厅等。坐在随波荡漾的渔排上，可以把酒临风、品尝即捞即烹的海中奇珍，还可以垂钓、赏鱼、娱乐休闲，真是奇趣天成，一种妙不可言的感受。"};
 
-   private String[] fuanimages1={"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu1.jpg",
-           "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu2.jpg",
-           "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu3.jpg",
-           "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu4.jpg",
-           "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu5.jpg",
-           "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fu6.jpg"};
-   private String[] fuanintroduces1 = {"        福建福安白云山，国家风景名胜区、国家4A级旅游景区、世界地质公园、国家地质公园。位于福建省福安市西北部穆云乡、晓阳镇境内，距福安市区约40公里。",
-           "        景区以“冰臼壶穴博物馆”、“九龙三绝”、罕见佛光仙境等地质天象奇观为特色，更有万亩桃花园、十里葡萄沟风光旖旎，娃娃鱼、午时莲、刺桫椤繁衍生息，畲、茶、廉、古和儒释道三教文化多元交融，共同演绎出仙境白云山的瑰丽和神奇。",
-           "        九龙洞景区是白云山五大园区之一，这里树茂花艳，瑶池翠山，彩画山林，冰臼自然。可谓是“冰臼垂天下，三绝驰古今”，园区内成群遍布的臼形怪石，其发布之广、规模之大、种类之全、形态之丰极为罕见。其中蟾溪游龙洞、南溪九龙洞洞中大小崩塌岩块、参差错落，洞底溪水潺潺、跌水频现、碧潭清幽、壶穴神奇，形成洞中有穴，洞洞有景的引人入胜的独特风景，被称为“地质奇观”“壶穴博物馆”。",
-           "        在亿年冰臼奇观间，更是孕育了美伦美奂的“九龙三绝”，即汇集了九寨之水、黄龙之林、黄果之瀑的绝美景观。属福建人心中的“西南三绝”！",
-           "        园区自秋开始，树木的换装之旅便拉开了帷幕，世外初冬，白云山却秋意正浓。五色彩林海，镶嵌于深山幽谷之中，依旧水蓝如宝石项链，镶嵌在九龙洞之中，彩林渐次变色，层林尽染，美轮美奂。",
-           "        让我们走进白云山，共同呼吸大自然清新的气息，探索亿万地质奥秘。"};
+   private String[] lianimages1 ={
+           "https://bkimg.cdn.bcebos.com/pic/6a600c338744ebf899ff903fdef9d72a6059a720?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto",
+           "https://bkimg.cdn.bcebos.com/pic/faf2b2119313b07e5433a4080bd7912397dd8c20?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto",
+           "https://bkimg.cdn.bcebos.com/pic/77094b36acaf2edd0c7fbde98a1001e939019320?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto"
+   };
+   private String[] lianintroduces1 = {
+           "        Huaguo Mountain, located in the middle foot of Yuntai Mountain in the south of Lianyungang City, Jiangsu Province, was called Cangwu Mountain in the Tang and Song dynasties, also known as Qingfeng Peak, the main peak of Yuntai Mountain Range, and the highest peak of Jiangsu Mountains. Huaguo Mountain has 136 peaks, and the main peak of Huaguo Mountain is the Jade Girl Peak, with an altitude of 624.4 meters.",
+           "        The geological formation of Huaguo Mountain is closely related to the tectonic movement and erosion of the earth's crust, and has experienced a long geological history and the influence of natural action, forming a unique landform landscape, and the landform of Huaguo Mountain in the scenic area is composed of red granite, with steep mountains and peculiar shapes.",
+           "        The scenic area where Huaguo Mountain is located has been named as a national key scenic spot, a national AAAAA tourist area, and a national geological park."};
 
     private String[] fudingimages1={"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding1.jpg",
             "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding2.jpg",
@@ -133,10 +129,10 @@ public class JianshaoActivity extends AppCompatActivity {
             introduces1 = jiaointroduces1;
             text2.setText("三都澳斗姆岛景区");
         }
-        if(name_receive.equals("福安市")){
-            images1 = fuanimages1;
-            introduces1 = fuanintroduces1;
-            text2.setText("福安白云山风景区");
+        if(name_receive.equals("Lianyungang")){
+            images1 = lianimages1;
+            introduces1 = lianintroduces1;
+            text2.setText("Mount Huaguoshan");
         }
         if(name_receive.equals("福鼎市")){
             images1 = fudingimages1;

@@ -36,8 +36,8 @@ public class FirstFragment extends Fragment {
     private HomeAdapter mAdapter;
     private HomeAdaptertwo mAdaptertwo;
     private RecyclerView mRecyclerViewtwo;
-    private String[] name = {"蕉城","古田","屏南","周宁","寿宁","福安","柘荣","福鼎","霞浦","其他"};
-    private String[] name1 = {"蕉城区","古田县","屏南县","周宁县","寿宁县","福安市","柘荣县","福鼎市","霞浦县"};
+    private String[] name = {"蕉城","古田","屏南","周宁","寿宁","Lianyungang","柘荣","福鼎","霞浦","其他"};
+    private String[] name1 = {"蕉城区","古田县","屏南县","周宁县","寿宁县","Lianyungang","柘荣县","福鼎市","霞浦县"};
     private int[] image = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six,R.drawable.seven,R.drawable.eight,R.drawable.nine,R.drawable.ten};
     private Banner banner;
     private GlideImageLoader glideImageLoader;
