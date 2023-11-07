@@ -31,7 +31,7 @@
             android:inputType="textPersonName"
             android:maxLines="1"
             android:singleLine="true"
-            android:hint="请输入内容"
+            android:hint="Please enter content"
             android:textSize="15sp"
             android:background="@drawable/round_button"
 
@@ -49,5 +49,5 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
 
-        android:text="搜索" />
+        android:text="Search" />
 </RelativeLayout>

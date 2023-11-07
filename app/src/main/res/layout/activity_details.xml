@@ -10,7 +10,7 @@
       android:layout_width="match_parent"
       android:layout_height="55dp"
       android:textSize="20dp"
-      android:text="景点介绍"
+      android:text="Introduction"
       android:textColor="@color/white"
       android:background="@drawable/home_bg"
       android:gravity="center"/>
@@ -47,7 +47,7 @@
         android:layout_marginEnd="12dp"
         android:layout_toLeftOf="@+id/jieshouname"
         android:layout_toStartOf="@+id/menpiao"
-        android:text="门票:"
+        android:text="Ticket:"
         android:textColor="@color/black"
         android:textSize="16dp" />
 
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="22dp"
-        android:hint="价格"
+        android:hint="Price"
         android:textColor="@color/blue"
         android:textSize="16dp" />
     <TextView
@@ -76,7 +76,7 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="景点介绍"
+          android:text="Introduction"
           android:textSize="16dp"
           android:textColor="@color/olivedrab"
       />
@@ -84,7 +84,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:id="@+id/jieshao"
-          android:text="查看详情"
+          android:text="Detail"
           android:textSize="14dp"
           android:layout_toLeftOf="@+id/i1"
 
@@ -133,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="酒店住宿"
+                android:text="Hotel"
                 android:textSize="18sp"
                 android:layout_centerInParent="true"
                 android:textColor="@color/black"
@@ -150,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="美食餐厅"
+                android:text="Cuisine"
                 android:textSize="18sp"
                 android:layout_centerInParent="true"
                 android:textColor="@color/black" />

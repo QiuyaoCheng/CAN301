@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:textSize="20dp"
-        android:text="景点"
+        android:text="Attractions"
         android:textColor="@color/white"
         android:background="@drawable/home_bg"
         android:gravity="center"/>
@@ -62,7 +62,7 @@
                     android:id="@+id/search"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:hint="请输入内容"
+                    android:hint="Please enter content"
                     android:textSize="20sp"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
@@ -77,7 +77,7 @@
                     android:layout_height="30dp"
                     android:layout_alignParentRight="true"
                     android:background="@color/white"
-                    android:text="搜索"
+                    android:text="Search"
                     android:textSize="20dp"
                     android:id="@+id/search_button"
                     android:layout_centerInParent="true"
@@ -106,16 +106,18 @@
         android:layout_toRightOf="@+id/ima1"
         android:textColor="@color/blue"
         android:textSize="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="相关的景点"
-        android:layout_below="@+id/image2"
-        android:id="@+id/didian1"
-        android:layout_marginTop="8dp"
-        android:layout_toRightOf="@+id/didian"
-        android:textColor="@color/black"
-        android:textSize="20dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="相关的景点"-->
+<!--        android:layout_below="@+id/image2"-->
+<!--        android:id="@+id/didian1"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_toRightOf="@+id/didian"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20dp"/>-->
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="400dp"

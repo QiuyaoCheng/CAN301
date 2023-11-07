@@ -56,7 +56,8 @@ public class ZhujiemianActivity extends AppCompatActivity {
     private  String [] gu = {"古田钱来山景区","翠屏湖","齐云寺","古田溪山书画院","长洋徐氏古民居群","金钟湖山庄","凤林祠","蝉林祠","圆瑛故居","古田临水宫"};
     private int[] guicons = {R.drawable.gutianxian,R.drawable.cuipinghu,R.drawable.qiyunshi,R.drawable.gutianxishan,R.drawable.changyangxunshi,R.drawable.jinzhonghushanzhuan,R.drawable.fenglinshi,R.drawable.changlinshi,R.drawable.yuanyinguju,R.drawable.gutianlinshuigong};
     private String[] gubuy = {"¥44","¥80","¥68","免费","免费","免费","免费","免费","免费","免费"};
-    private String[] guintroduce = {"钱来山风景区位于福建省宁德市古田县大桥镇钱厝村，是福建首个“钱文化”主题旅游风景区。景区总面积666平方公里，以景区出入口为中心，由荷花梯田、樱花谷、820山谷、飞瀑谷、有钱谷和谷里农场6个片区组成，呈环状分布，游步道总长度约3.8公里。钱来山风景区平均海拔820米，夏季从早到晚均温27℃，是福州周边又一避暑胜地。",
+    private String[] guintroduce = {
+            "钱来山风景区位于福建省宁德市古田县大桥镇钱厝村，是福建首个“钱文化”主题旅游风景区。景区总面积666平方公里，以景区出入口为中心，由荷花梯田、樱花谷、820山谷、飞瀑谷、有钱谷和谷里农场6个片区组成，呈环状分布，游步道总长度约3.8公里。钱来山风景区平均海拔820米，夏季从早到晚均温27℃，是福州周边又一避暑胜地。",
             "翠屏湖位于古田县城东郊，翠屏湖距城关3公里，翠屏湖属亚热带气候，翠屏湖中烟波浩淼，空气清新，四季如春，翠屏湖水域面积达37.1平方公里，翠屏湖蓄水量为6.41亿立方米，水质碧澄（达到国家二级标准）。三十六个大小岛屿，隔水相峙，沿翠屏湖有被省人民政府列为省级文物保护单位的海内外公认的顺天圣母陈靖姑祖庙临水宫。" ,
             "齐云寺建于北宁三年(1066年),位于凤埔与平湖交界,离古田新城20公里,地理条件优越.东靠古田翠屏湖,毗连宁德三都澳;北接屏南白水洋,延伸周宁鲤鱼溪,是通过古田火车站对接黄山、武夷山国家红色旅游线路必经之路。这座千年古刹，寺宇巍峨壮观，殿亭布局合理。建有大雄宝殿，地藏殿，韦伏殿，观音堂、积善堂、客堂，还有莲池宝塔，放生池。去年又增设了红色革命据点纪念堂。寺内塑许多金光闪闪的佛像。寺前竖有清乾隆三十八年福州府古田县正堂的“仁谳”石碑；寺门两柱刻制“齐皆积享先三宝，云可霖福四方”的对联；两条浮雕彩龙，巧夺天工。寺外还建有土地殿、迎客亭、半山歇息亭、水尾亭；去年又在寺前竖立一尊高大的石雕送子观音。",
             "五十年前，古田旧县城东北郊外两溪交汇处的沙坂高地处有座建于宋淳化二年（991）的溪山书院，朱熹曾在此讲学，并题匾曰“溪山第一”，曾圮于水，明清两代曾重建、重修，清代每年盛夏这里是诗人雅士吟哦之所，1952年为大水冲毁，1958年建古田溪水库，溪山书院旧址亦随之沉入湖底，人们总是念念不忘。五十年后的今天在原溪山书院不远处的翠屏湖后垅后岛建起溪山书画院，真是令人欢欣鼓舞。",
@@ -71,7 +72,8 @@ public class ZhujiemianActivity extends AppCompatActivity {
     private  String [] pingnan = {"白水洋","鸳鸯溪","大棠滑草场","际头耕读文化大观园","漈头古村","纱帽岩","万安桥","百丈漈瀑布","仙山牧场","鼎潭仙宴谷","国家地质公园","观景台","仙女瀑"};
     private int[] pingnanicons = {R.drawable.baishuiyang,R.drawable.yuanyangxi,R.drawable.datang,R.drawable.daguangyuan,R.drawable.cuijiao,R.drawable.shamaoyan,R.drawable.wanganqiao,R.drawable.tianchi,R.drawable.dayushan,R.drawable.jiulong,R.drawable.gutianlinshuigong,R.drawable.guanjingtai,R.drawable.xiannvpu};
     private String[] pingnanbuy = {"¥120","¥73","免费","免费","免费","免费","免费","免费","免费","免费","免费","¥70","¥70"};
-    private String[] pingnanintroduce = {"白水洋，位于福建省宁德市屏南县，是国家AAAAA级旅游景区。白水洋地质公园园区总面积达77.34平方公里，拥有世界唯一的鸳鸯猕猴自然保护区。白水洋景区是福建省八大旅游品牌之一，2003年11月，福建省委书记卢展工深入白水洋考察时，称白水洋为“天下绝景，宇宙之谜”；国家副总理吴仪游玩白水洋后题“奇特景观”。",
+    private String[] pingnanintroduce = {
+            "白水洋，位于福建省宁德市屏南县，是国家AAAAA级旅游景区。白水洋地质公园园区总面积达77.34平方公里，拥有世界唯一的鸳鸯猕猴自然保护区。白水洋景区是福建省八大旅游品牌之一，2003年11月，福建省委书记卢展工深入白水洋考察时，称白水洋为“天下绝景，宇宙之谜”；国家副总理吴仪游玩白水洋后题“奇特景观”。",
             "鸳鸯溪风景区是我国目前独有的鸳鸯鸟保护区。 鸳鸯溪长14公里，附近山深林密，幽静而清净，是鸳鸯栖息的好地方。每年秋季有数百上千只鸳鸯从北方飞来越冬。" ,
             "大棠休闲农场位于屏南县境内，这里平均海拔830米，年均气温13～18℃，冬无严寒，夏无酷暑,荣获“宁德市休闲农业示范点”。距屏南城关15公里，屏古高速浙洋互通口5公里。",
             "际头耕读文化大观园座落于屏南农耕文化博物馆正面设立在相邻的六幢古民居内,带给人的是原汁原味、古香古色的视觉冲击。潦头村历史悠久,至今已有1135年历史,文化底蕴深厚,历代文物众多，—大批古民居各具特色,就地取材,省时、省工又省钱。目前馆内也只有两位自愿者式的解说员且这种解说完全是免费的，博物馆目前还在不断完善和积累之中馆内还设立有农耕农作的体验区,若带上一家人到此走走，都会有不小的收获。",
@@ -149,10 +151,11 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "青岚湖水利风景区位于宁德市柘荣县，依托青岚水库而建，景区面积19.34平方公里，其中水域面积0.71平方公里，属于水库型水利风景区。区域内水体澄清，水质I级;负氧离子含量高，空气质量指数一级；森林覆盖率为86%,水土流失综合治理率高达96%；动植物资源丰富，生态环境优良。"};
 
     //福鼎市
-    private String[] fuding = {"太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺"};
-    private int[] fudingoicons = {R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun,R.drawable.shilancun,R.drawable.chengbao,R.drawable.diantoumazu,R.drawable.fudingxiangshansi,R.drawable.tianmenlingyouqu,R.drawable.gubao,R.drawable.lingfengshi,R.drawable.qiyunshi,R.drawable.xiyanglaorenqiao,R.drawable.fuyao,R.drawable.ziguo};
-    private String[] fudingbuy = {"¥90","¥35","¥25","¥325","¥37","¥10","¥50","¥30","免费","免费","免费","¥120","¥137","免费","免费","¥140","免费","免费","免费"};
-    private String[] fudingintroduce ={"太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
+    private String[] Nantong = {"太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺"};
+    private int[] Nantongicons = {R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun,R.drawable.shilancun,R.drawable.chengbao,R.drawable.diantoumazu,R.drawable.fudingxiangshansi,R.drawable.tianmenlingyouqu,R.drawable.gubao,R.drawable.lingfengshi,R.drawable.qiyunshi,R.drawable.xiyanglaorenqiao,R.drawable.fuyao,R.drawable.ziguo};
+    private String[] Nantongbuy = {"¥90","¥35","¥25","¥325","¥37","¥10","¥50","¥30","免费","免费","免费","¥120","¥137","免费","免费","¥140","免费","免费","免费"};
+    private String[] Nantongintroduce ={
+            "太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
             "牛郎岗海滨这里气候冬暖夏凉，素以“碧海金沙好消夏”而吸引各地游客慕名而至。牛郎岗海滨沙滩平坦、明净，环山绿树成荫，周围礁石造型各异，有鸳鸯礁、织女洞、海上一线天等自然景观。",
             "翠郊古民居是迄今为止在江南地区所发现的单体建筑面积大、保存完好的古民居，堪称江南古民居之杰作。位于福建省福鼎市20公里的白琳镇翠郊村翠郊，离太姥山大概两个小时左右的车程。",
             "九鲤溪瀑景区是太姥山“山、海、川、岛”四大风景名胜区的重要组成部分，主溪流长25公里，汇集13条支流。溪流两岸，青山重回，绿树葱茏，怪石林立，碧如澄沏，水浅处，卵石游鱼，历历可数，舟行其间，如游画中。以田园风光见长，生态环境优美，成为闽东书画院的写生创作中心。荡涤都市尘埃，回归梦幻田园，乘筏漂流溪上，清凉逍遥。",
@@ -202,12 +205,13 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "第一高峰\"旗山\"好风光地处山区的虎贝镇，海拔高，境内山峦起伏，从而形成了独特的高山气候与风景。第一旗山，因其形如风中之旗而得名。它位于虎贝镇境内文峰、梅鹤村附近，堂义村后山。上山有多条路线:其一虎贝直接上山，其二虎贝黄家村后山上山，其三虎贝乡彭家村后山上山(路程最近)，也是唯一一条公路路线，通常登山游客都选此条，被称通往宁德高峰\"第一旗\"的必备之路。其四，堂义村后山走最美，经过竹林，森林，小溪，还有野菜，野果采摘,经过兔耳岭景区，这里风景独好，是旅游最佳路线。"
     };
     private String[] qitaname ={"古田县","屏南县","福鼎市","福鼎市","柘荣县","柘荣县","蕉城区","蕉城区","蕉城区"};
-    private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景区","福建支提山国家森林公园","宁德洋中水利风景区","宁德蕉城区上金贝中华畲家寨","洪口水库","宁德鹤林宫","宁德市博物馆",
+    private String[] nametwo = {
+            "三都澳","霍童古镇","宁德东湖水利风景区","福建支提山国家森林公园","宁德洋中水利风景区","宁德蕉城区上金贝中华畲家寨","洪口水库","宁德鹤林宫","宁德市博物馆",
             "古田钱来山景区","翠屏湖","齐云寺","古田溪山书画院","长洋徐氏古民居群","金钟湖山庄","凤林祠","凤林祠坐","蝉林祠","圆瑛故居","古田临水宫",
             "白水洋","鸳鸯溪","大棠滑草场","际头耕读文化大观园","漈头古村","纱帽岩","万安桥","百丈漈瀑布","仙山牧场","鼎潭仙宴谷","国家地质公园","观景台","仙女瀑",
             "鲤鱼溪","九龙漈风景名胜区","陈峭古村","周宁滴水岩","林公忠平王祖殿","周宁般若寺","九龙石窟","高山明珠","浦源郑氏宗祠",
             "犀溪漂流","西浦","灵峰禅寺","南山风景区","下党村","小托水库水利风景区","寿宁县生态茶园","犀溪","中共闽东特委含溪旧址","车岭古道",
-            "福安白云山","兰谷温泉度假村","天池草场","金山大峡谷","狮峰寺","廉村","穆云畲族乡","闽东革命纪念馆","福安文化馆","柏柱洋红色旅游景区","福安市博物馆",
+            "Mount Huaguoshan","Haizhou Ancient City","KongWang Mountains","YunTai Mountains","Taohuajian Mountain Stream","Eden Garden","LianYunGang Museum","Qinshan Island","And Lake Wetland Park","Dayi Mountains",
             "柘荣鸳鸯草场","九龙井","宁德东狮山","仙都胜境景区","柘荣县九龙井水利风景区","东源古建筑群","凤岐吴氏大宅","百丈岩八仙洞","蟠桃映翠","青岚湖水利风景区",
             "太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺",
             "杨家溪","罗汉溪景区","赤岸村","霞浦松山天后圣母行宫","空海大师纪念堂","霞蒲滩涂","北岐滩涂","霞浦县城","小皓海滩","七都溪"
@@ -217,7 +221,9 @@ public class ZhujiemianActivity extends AppCompatActivity {
             R.drawable.baishuiyang,R.drawable.yuanyangxi,R.drawable.datang,R.drawable.daguanyuan,R.drawable.jitoucun,R.drawable.shamaoyan,R.drawable.wanganqiao,R.drawable.baishangpubu,R.drawable.xianshanmuchang,R.drawable.dingtanxianyangu,R.drawable.guojiagongyuan,R.drawable.guanjingtai,R.drawable.xiannvpu,
             R.drawable.liyuxi,R.drawable.jiulongfengjingmingshengqu,R.drawable.chenxiaogucun,R.drawable.zhouningdishuiyan,R.drawable.zudian,R.drawable.zhouningbanruosi,R.drawable.jiulongshiku,R.drawable.gaoshanmingzhu,R.drawable.puyuanzongsi,
             R.drawable.xixi,R.drawable.xipu,R.drawable.lingfeng,R.drawable.nanshan,R.drawable.xiadangcun,R.drawable.shuikufengjingqu,R.drawable.shengtaichayuan,R.drawable.xi,R.drawable.mindongjiuzhi,R.drawable.chelinggudao,
+
             R.drawable.baiyunshan,R.drawable.langu,R.drawable.tianchi,R.drawable.jinshan,R.drawable.lingfeng,R.drawable.liancun,R.drawable.shezu,R.drawable.wenhuaguan,R.drawable.wenhuaguan,R.drawable.yanghongse,R.drawable.fuanbowuguan,
+
             R.drawable.zherong,R.drawable.jiulongjing,R.drawable.dongshishan,R.drawable.xiandujingqu,R.drawable.zherongjiulong,R.drawable.dongyuangujianzhu,R.drawable.fengqiwushidazhai,R.drawable.baizhangyanbaxiandong,R.drawable.pantao,R.drawable.qinglanfengjingqu,
             R.drawable.tailaoshan,R.drawable.niulang,R.drawable.cuijiao,R.drawable.jiulixipu,R.drawable.xiaobailu,R.drawable.dayushan,R.drawable.yushandao,R.drawable.chixicun,R.drawable.shilancun,R.drawable.chengbao,R.drawable.diantoumazu,R.drawable.fudingxiangshansi,R.drawable.tianmenlingyouqu,R.drawable.gubao,R.drawable.lingfengshi,R.drawable.guoxingshi,R.drawable.xiyanglaorenqiao,R.drawable.fuyao,R.drawable.ziguo,
             R.drawable.yangjiaxi,R.drawable.luohanxi,R.drawable.chianqiao,R.drawable.shengmuxinggong,R.drawable.jiniantang,R.drawable.xiaputantu,R.drawable.beiqitangtu,R.drawable.xiapuxiancheng,R.drawable.xiaohaohait,R.drawable.qiduxi
@@ -233,7 +239,8 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "¥90","¥35","¥25","¥325","¥37","¥10","¥50","¥30","免费","免费","免费","¥120","¥137","免费","免费开放或景区停业","¥140","免费","免费","免费",
             "¥100","¥178","免费","免费","免费","免费","免费","无需门票","免费","免费"
     };
-    private String[] introducestwo = {"三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。",
+    private String[] introducestwo = {
+            "三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。",
             "霍童古镇是久负盛名的千年古镇，也是中国民间文化艺术之乡。霍童原名霍山，西周时霍桐真人在此地修炼，故名。霍童的美不仅在于幽美的生态环境，千年的文化积淀也使得这里散发着更大的古镇魅力。说到霍童，不可不提霍童线狮，作为第一批国家级非物质文化遗产，霍童线狮以其独特的艺术表现形式受到人们的喜爱，以其精彩的表演博得台下的观众的阵阵喝彩，这些的种种都奠定了霍童线狮在中国民俗文化中的地位，有“中华绝活”的美名。",
             "宁德东湖水利风景区是国家级水利风景区，位于福建省宁德市。总面积4.48平方公里，其中水域面积2.91平方公里，包括环东湖南、北岸公园和大门山、乌龟山、金蛇山等\"一湖两岸三山\"景观。风景区湿地面积较广，是水鸟觅食与栖息的理想场所。请看正文了解宁德东湖水利风景区的概况及旅游攻略。宁德东湖水利风景区东起金马海堤-金蛇头码头西接福宁北路，南达塔山路-南湖滨路，北至闽东中路-北湖滨路。",
             "第一高峰\"旗山\"好风光地处山区的虎贝镇，海拔高，境内山峦起伏，从而形成了独特的高山气候与风景。第一旗山，因其形如风中之旗而得名。它位于虎贝镇境内文峰、梅鹤村附近，堂义村后山。上山有多条路线:其一虎贝直接上山，其二虎贝黄家村后山上山，其三虎贝乡彭家村后山上山(路程最近)，也是唯一一条公路路线，通常登山游客都选此条，被称通往宁德高峰\"第一旗\"的必备之路。其四，堂义村后山走最美，经过竹林，森林，小溪，还有野菜，野果采摘,经过兔耳岭景区，这里风景独好，是旅游最佳路线。",
@@ -344,7 +351,7 @@ public class ZhujiemianActivity extends AppCompatActivity {
             "寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县",
             "Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang",
             "柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县",
-            "福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市",
+            "Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong","Nantong",
             "霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县"
 
     };
@@ -428,11 +435,11 @@ public class ZhujiemianActivity extends AppCompatActivity {
             buy = zhebuy;
             introduces = zheintroduce;
         }
-        if(name_receive.equals("福鼎市")){
-            name = fuding;
-            icons = fudingoicons;
-            buy = fudingbuy;
-            introduces = fudingintroduce;
+        if(name_receive.equals("Nantong")){
+            name = Nantong;
+            icons = Nantongicons;
+            buy = Nantongbuy;
+            introduces = Nantongintroduce;
         }
         if(name_receive.equals("霞浦县")){
             name = xiapu;

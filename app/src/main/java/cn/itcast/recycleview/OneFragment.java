@@ -86,7 +86,8 @@ public class OneFragment extends Fragment {
 
     //福安市
     private String[] lianname = {"Huaguoshan Hotel","Sotitel Lianyungang Suning","Zhongyin Mingdu Hotel","Addo Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
-    private  int[]  lianicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali};
+    private  int[]  lianicons = {R.drawable.huah,R.drawable.soh,R.drawable.mingh,R.drawable.addoh,R.drawable.jinh,R.drawable.homeh,R.drawable.hanh};
+//    private  int[]  lianicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali};
     private String[] lianbuy = {"¥91","¥112","¥145","¥105","¥116","¥105","¥150"};
     private String [] lianintroduce = {
             "Huaguoshan Hotel has convenient transportation, complete room facilities, warm and comfortable layout, and thoughtful service. Rooms clean and tidy, spacious and bright, environmental health, complete supporting facilities, thoughtful service, convenient to stay, cost-effective, accommodation environment, good ventilation and lighting.",

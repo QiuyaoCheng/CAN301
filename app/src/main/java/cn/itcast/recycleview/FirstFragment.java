@@ -36,15 +36,16 @@ public class FirstFragment extends Fragment {
     private HomeAdapter mAdapter;
     private HomeAdaptertwo mAdaptertwo;
     private RecyclerView mRecyclerViewtwo;
-    private String[] name = {"蕉城","古田","屏南","周宁","寿宁","Lianyungang","柘荣","福鼎","霞浦","其他"};
-    private String[] name1 = {"蕉城区","古田县","屏南县","周宁县","寿宁县","Lianyungang","柘荣县","福鼎市","霞浦县"};
+    private String[] name = {"蕉城","古田","屏南","周宁","寿宁","Lianyungang","柘荣","Nantong","霞浦","其他"};
+    private String[] name1 = {"蕉城区","古田县","屏南县","周宁县","寿宁县","Lianyungang","柘荣县","Nantong","霞浦县"};
     private int[] image = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six,R.drawable.seven,R.drawable.eight,R.drawable.nine,R.drawable.ten};
     private Banner banner;
     private GlideImageLoader glideImageLoader;
     private List<String> imagePath;
 
     private String[] fuding = {"太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","古田钱来山景区","翠屏湖","齐云寺","鲤鱼溪","九龙漈风景名胜区","陈峭古村","周宁滴水岩"};
-    private String[] fudingoicons = {"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E5%A4%AA%E5%A7%A5%E5%B1%B1/tailaoshan.png",
+    private String[] fudingoicons = {
+            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E5%A4%AA%E5%A7%A5%E5%B1%B1/tailaoshan.png",
             "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%8E%A8%E8%8D%90/niulang.png",
             "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%8E%A8%E8%8D%90/cuijiao.png",
             "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%8E%A8%E8%8D%90/jiulixipu.png",
@@ -59,7 +60,8 @@ public class FirstFragment extends Fragment {
     private String[] fudingbuy = {"¥90","¥35","¥25","¥325","¥37","¥44","¥80","¥68","¥60","免费","免费","免费"};
     private String[] fudingpingfen = {"4.7分","4.4分","4.2分","4.4分","4.3分","4.3分","4.8分","4.5分","4.3分","4.4分","4.6分","4.7分"};
 
-    private String[] fudingintroduce ={"太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
+    private String[] fudingintroduce ={
+            "太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
             "牛郎岗海滨这里气候冬暖夏凉，素以“碧海金沙好消夏”而吸引各地游客慕名而至。牛郎岗海滨沙滩平坦、明净，环山绿树成荫，周围礁石造型各异，有鸳鸯礁、织女洞、海上一线天等自然景观。",
             "翠郊古民居是迄今为止在江南地区所发现的单体建筑面积大、保存完好的古民居，堪称江南古民居之杰作。位于福建省福鼎市20公里的白琳镇翠郊村翠郊，离太姥山大概两个小时左右的车程。",
             "九鲤溪瀑景区是太姥山“山、海、川、岛”四大风景名胜区的重要组成部分，主溪流长25公里，汇集13条支流。溪流两岸，青山重回，绿树葱茏，怪石林立，碧如澄沏，水浅处，卵石游鱼，历历可数，舟行其间，如游画中。以田园风光见长，生态环境优美，成为闽东书画院的写生创作中心。荡涤都市尘埃，回归梦幻田园，乘筏漂流溪上，清凉逍遥。",
@@ -72,7 +74,8 @@ public class FirstFragment extends Fragment {
             "陈峭村，是大自然的厚赠，有瑰丽的日出、云海、星空，有磅礴的峭石、岩洞、峡谷，还有千年遗存的街巷、廊桥、民俗。然而，这里因为地处偏僻，交通不便，一直“养在深闺人未识”。",
             "滴水岩风景区位于福建省周宁县城西南30公里的洞宫山麓，与古朴典雅的鲤鱼溪、气势磅礴的九龙祭瀑布群齐名，名载《辞海》。古人题匾曰“八闽首景”，它邻近国家级自然保护区鸳鸯溪的核心地带，依霍童溪上游的叉溪、白水洋溪等处与政和、屏南、宁德三地毗连，山峦起伏，溪涧密布，风景秀丽，成为闽东霍童溪流域旅游风光带的一个重要组成部分。"
     };
-    private String[] fudingintroduce1 ={"    太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞...",
+    private String[] fudingintroduce1 ={
+            "    太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞...",
             "    牛郎岗海滨这里气候冬暖夏凉，素以“碧海金沙好消夏”而吸引各地游客慕名而至...",
             "    翠郊古民居是迄今为止在江南地区所发现的单体建筑面积大、保存完好的古民居，堪称江南古民居之杰作...",
             "    九鲤溪瀑景区是太姥山“山、海、川、岛”四大风景名胜区的重要组成部分，主溪流长25公里，汇集13条支流...",
@@ -95,7 +98,7 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
         "白水洋","鸳鸯溪","大棠滑草场","际头耕读文化大观园","漈头古村","纱帽岩","万安桥","百丈漈瀑布","仙山牧场","鼎潭仙宴谷","国家地质公园","观景台","仙女瀑",
         "鲤鱼溪","九龙漈风景名胜区","陈峭古村","周宁滴水岩","林公忠平王祖殿","周宁般若寺","九龙石窟","高山明珠","浦源郑氏宗祠",
         "犀溪漂流","西浦","灵峰禅寺","南山风景区","下党村","小托水库水利风景区","寿宁县生态茶园","犀溪","中共闽东特委含溪旧址","车岭古道",
-        "福安白云山","兰谷温泉度假村","天池草场","金山大峡谷","狮峰寺","廉村","穆云畲族乡","闽东革命纪念馆","福安文化馆","柏柱洋红色旅游景区","福安市博物馆",
+        "Mount Huaguoshan","Haizhou Ancient City","KongWang Mountains","YunTai Mountains","Taohuajian Mountain Stream","Eden Garden","LianYunGang Museum","Qinshan Island","And Lake Wetland Park","Dayi Mountains",
         "柘荣鸳鸯草场","九龙井","宁德东狮山","仙都胜境景区","柘荣县九龙井水利风景区","东源古建筑群","凤岐吴氏大宅","百丈岩八仙洞","蟠桃映翠","青岚湖水利风景区",
         "太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺",
         "杨家溪","罗汉溪景区","赤岸村","霞浦松山天后圣母行宫","空海大师纪念堂","霞蒲滩涂","北岐滩涂","霞浦县城","小皓海滩","七都溪"
@@ -121,7 +124,8 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             "¥90","¥35","¥25","¥325","¥37","¥10","¥50","¥30","免费","免费","免费","¥120","¥137","免费","免费开放或景区停业","¥140","免费","免费","免费",
             "¥100","¥178","免费","免费","免费","免费","免费","无需门票","免费","免费"
     };
-    private String[] introduces = {"三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。",
+    private String[] introduces = {
+            "三都澳又名三沙湾、宁德港，位于福建省宁德市东南部，为中国1.84万公里黄金海岸线的中点。距宁德市区30公里，为闽东沿海的“出入门户，五邑咽喉”，是世界级天然深水良港。",
             "霍童古镇是久负盛名的千年古镇，也是中国民间文化艺术之乡。霍童原名霍山，西周时霍桐真人在此地修炼，故名。霍童的美不仅在于幽美的生态环境，千年的文化积淀也使得这里散发着更大的古镇魅力。说到霍童，不可不提霍童线狮，作为第一批国家级非物质文化遗产，霍童线狮以其独特的艺术表现形式受到人们的喜爱，以其精彩的表演博得台下的观众的阵阵喝彩，这些的种种都奠定了霍童线狮在中国民俗文化中的地位，有“中华绝活”的美名。",
             "宁德东湖水利风景区是国家级水利风景区，位于福建省宁德市。总面积4.48平方公里，其中水域面积2.91平方公里，包括环东湖南、北岸公园和大门山、乌龟山、金蛇山等\"一湖两岸三山\"景观。风景区湿地面积较广，是水鸟觅食与栖息的理想场所。请看正文了解宁德东湖水利风景区的概况及旅游攻略。宁德东湖水利风景区东起金马海堤-金蛇头码头西接福宁北路，南达塔山路-南湖滨路，北至闽东中路-北湖滨路。",
             "第一高峰\"旗山\"好风光地处山区的虎贝镇，海拔高，境内山峦起伏，从而形成了独特的高山气候与风景。第一旗山，因其形如风中之旗而得名。它位于虎贝镇境内文峰、梅鹤村附近，堂义村后山。上山有多条路线:其一虎贝直接上山，其二虎贝黄家村后山上山，其三虎贝乡彭家村后山上山(路程最近)，也是唯一一条公路路线，通常登山游客都选此条，被称通往宁德高峰\"第一旗\"的必备之路。其四，堂义村后山走最美，经过竹林，森林，小溪，还有野菜，野果采摘,经过兔耳岭景区，这里风景独好，是旅游最佳路线。",
@@ -174,17 +178,17 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             "犀溪，因在其西浦村的河滩上发现有印有犀牛脚印的溪石而得名，一个有着江浙风情的闽东小镇。犀溪位于福建宁德市寿宁县的犀溪乡，和浙江的泰顺相连，是一个山清水秀的地方，民风淳朴，风景怡人。作为集浙南乡村灵秀于一身的犀溪，绝对能让远行的你得到所要寻找的美好和宁静。犀溪名字的由来，据说就是因为在其西浦村的河滩上发现有印有犀牛脚印的溪石，现在传说中的犀牛脚印早已无处寻觅，而让远方来客陶醉的景色，就在西浦村上流的河滩处。犀溪文化生态旅游是以犀溪流域为纽带，以文化和生态为基础，以廊桥和古建筑为特色，北起犀溪乡外山村及牛当山，南至仙峰村，西至笔架山，东到长岗头山脊一线，并包括甲坑、石竹州一带，面积约17.8平方公里。旅游资源分布呈现大分散小集中的布局，包括西浦文化园林村、犀溪古建筑群、犀溪水域风光带、甲坑红色旅游地、笔架山山地风光带、石竹州峡谷等。内容来自环视旅游网。犀溪漂流，顺流而下，热情四溢，在5.3公里的河道上漂流总落差达到了180米，时而激流，时面缓潭，可谓有惊无险，乐趣天成。",
             "包括含溪闽东特委旧址、瓦窑坪红军标语、瓦窑坪红军洞等。中央红军长征后，闽东苏区与党中央失去了联系，局势十分严峻。1935年5月，中共闽东临时特委委员叶飞在含溪召开紧急会议，重新建立中共闽东特委，下辖霞鼎等4个中心县委和14个县委，领导闽东地区坚持了三年游击斗争。",
             "车岭古道位于寿宁县斜滩镇斜滩村、清源乡阳尾村，年代为明至清。明中叶形成，由明迄清历代维修，是寿宁通往福宁府的重要古官道。古道自斜滩蜿蜒而上，相对高差658米，全长约10公里。山路用石块随地形铺就，宽1到2米，沿途分布多处路亭、摩崖石刻、关隘，主要有车岭关、一亭、“岭峻云深”石刻、二亭、三亭、四亭遗址、五亭遗址、“去思碑”石刻、平氛关、龙凤亭等。",
-            "福建福安白云山，国家风景名胜区、国家4A级旅游景区、世界地质公园、国家地质公园。位于福建省福安市西北部穆云乡、晓阳镇境内，距福安市区约40公里。",
-            "兰谷温泉位于溪潭镇兰田村，福安西高速出口300米处，距离福安市区仅6公里，占地面积3.3万平方米。依山而建，总计划投资8000万元，规划有室内外温泉池58个。一期已投入2000万元，以畲医药养颜养生温泉为主题，开发有26个不同主题的养生药泉，二期将重点开发院落式私家温泉，给福安人一个家门口的“治愈系”温泉度假胜地。",
-            "天池草场位于福建省福安市松罗乡东山之巅，环境优美，可朝看日出，夕赏晚霞，晴观蓝天白云，雨观云海虹霓，置身连绵起伏的广袤草坪，仿佛临登仙界。景区内设亲子园、拓展园、萌宠园及多种新型游乐设备，服务设施齐全，是亲子、度假、避暑、学研的好去处。",
-            "金山大峡谷生态风景区是位于福安市松罗乡东北部，距福安市区仅40余公里，景区游览路线全长3.5公里。金山大峡谷是集运动、体闲、观光、娱乐、养生于一体的乡村生态自然风景区。\n",
-            "狮峰寺又称狮峰广化禅寺，位于福安市柏柱洋狮峰山麓，距县城30公里。坐西朝东，傍山而立，建筑雄伟。虽时历千年而庙貌尚存。为闽东佛教千年古刹，属闽东佛教历史最早、规模最大的寺院之一。大殿建筑风格独特，历史价值极高，属国内罕见，1985年10月作为革命旧址被福建省政府核定为第二批省级文物保护单位，2006年5月25日由国务院核定并公布为第六批全国重点文物保护单位。此外，寺中还留有大量丰富的历代文人墨客的名作佳句。1991年，全国政协副主席、中国佛教协会会长赵朴初居士亲题寺名\"“狮峰寺”三字。",
-            "廉村位于福建宁德福安市溪潭镇。廉村原名石矶津，是唐朝福建第一个进士薛令之的故乡。廉村被喻为开闽进士第一村，位于福安市溪潭镇穆阳溪中游西岸，旧名富溪津、石矶津，因里人薛令之是福建第一位进士,且为官清廉，被御赐\"廉村\"、“廉水\".“廉岭\"之名。村内主要文物古迹有:明清时期的廉村城墙、陈氏宗祠、陈氏支祠、后湖宫、妈祖庙、陈树安宅、陈住松宅、“聪明泉\"、薛令之故居、薛令之读书处古码头等。传统产业主要是田草织席等。溪潭廉村还有宋代城堡建筑群、宋将陈最墓，赛岐苏阳明将刘中藻墓，康厝东山雪洞等。",
-            "穆云畲族乡地处福安市西部，下辖33个村民委员会，其中纯畲族村14个，回族村1个，畲汉杂居村7个。地理交通便利，区位f势明显，省道下浦线、县道福穆线和正在建设中的宁武高速公路贯穿全境，白云山互通口设于桂林村，是福安市\"一市三区六团\"发展布局之生态旅游经济区的重要组成部分。茶叶、穆阳水蜜桃、刺葡萄是农业三大主导产业。全乡茶园面积达10000多前刺葡萄面积6000多亩。境内自然风光瑰丽神奇，独树一帜。国家AA级景区、全省农业旅游示范点-溪塔葡萄沟风景区集农业观光、畲族风情于一体，名闻遐迩。",
-            "闽东革命纪念馆馆藏品有从马列主义传播到轰轰烈烈大革命，从工农武装割据、创建闽东苏区到坚持艰苦卓绝的三年游击战争，从奔赴民族解放战争的战场到解放福建期间曾经在这块土地上战斗过的陶铸、叶飞、粟裕、曾志、范式人、杨采衡、陈挺、左丰美等老一辈革命家的照片、家书、传单、书、刊、佩刀、印匣、印、衣服、台灯、砚台、墨盒、矛、戈等革命文物。",
-            "福安文化馆现有馆舍三层，总面积达3432平方米。全馆设有文学、音乐、舞蹈、戏曲、美术、摄影等课程，有大、中型排练厅、表演厅、展览厅等。现有工作人员14人，其中副研究员1人、中级馆员6人、助理馆员3人、管理员4人。2008年举办大、中型歌曲、戏剧、小品等文艺晚会30多场，举办大型文化艺术展览10多场，组织文化理论研讨活动和对外交流活动15场次。近年来创办了6个文艺艺术创作基地和4个未成年人文化活动基地，创建了2个美术、舞蹈培训中心。",
-            "柏柱洋红色旅游景区是福安溪柄镇旅游发展的核心所在，其独具特色的红色旅游资源是当地旅游的“金名片\"”。该景区位于溪柄镇东南方，距市区30公里，被誉为“闽东延安”。邓子恢、叶飞、陶铸、曾志、马立峰、阮英平、詹如柏等革命前辈在此创建中共闽东特委、闽东苏维埃政府。该景区以红色旅游为主题，集\"红、绿、俗、古、廉\"旅游资源于一体，于2011年被列入国家\"十二五'红色旅游规划名单，中共闽东特委旧址被纳入全省7个红色旅游经典景区。",
-            "福安市博物馆位于福安市公园路58号，成立于2004年6月8日,其前身为成立于建国初期的福安市文化馆文物室，人员编制2名,在福安市文体局办公楼内办公。福安市博物馆职责以发现、珍集、收藏、保护、研究与展示宣传历史文化遗产，传播有益于社会进步的思想、道德、科学技术和文化知识，繁荣中华文化事业，推动社会主义精神文明建设，发挥社会教育功能，丰富人民的精神文化生活，提高公众素质。",
+            "Huaguo Mountain, located at the foot of south Yuntai Mountain in Lianyungang City, Jiangsu Province, the Tang and Song dynasties called Cangwu Mountain, also known as Qingfeng top, the main peak of Yuntai Mountain, is the highest peak of Jiangsu mountains. Huaguo Mountain has 136 peaks, the main peak of Huaguo Mountain is Jade peak, elevation 624.4 meters.",
+            "Haizhou is the source, origin and starting point of Lianyungang. Haizhou Ancient City is located in the southwest of Haizhou District, Lianyungang City, Jiangsu Province. With a history of more than 2,000 years, the ancient city has been the political, economic and cultural center of Hai, Gan, Shu and Guan regions since the Qin and Han Dynasties.",
+            "Kongwang Mountain is located in the east of Haizhou Ancient City, Lianyungang City, Jiangsu Province. Kongwang Mountain, a national 4A-level scenic spot, is a thousand-year unique mountain in the annals of Chinese culture because Confucius climbed the mountain and looked at the sea.",
+            "Yuntai Mountain on the Sea (national AAAA tourist attraction, National scenic area, National Forest Park, China's top Ten villages and towns slow tour), located in Sucheng Street, Lianyun District, Lianyungang City, Jiangsu Province, is a famous tourist resort along the Jiangsu coast. This mountain was originally an island in the sea, and then evolved into land.",
+            "Taohuajian is located at the southern foot of Jinping Mountain, and Taohuajian is 9 kilometers away from Lianyungang City. In 2014, it was rated as an \"AAAA\" scenic spot by the National Tourism Administration. The Jiangjun Cliff petroglyphs in the scenic area are national key cultural relics protection units and the pilgrimage center of the Dongyi people 7,000 years ago.",
+            "Eden Scenic Area is located 3.5 kilometers east of Guanyun County, Lianyungang City, Jiangsu Province, close to National Highway 204, and Lianzhen high-speed railway passes through the scenic spot. The scenic area covers an area of 10,000 acres, including 6,500 acres of pear orchards, 3,200 acres of hundred gardens, and about 300 acres of Danish fairy tale town, Sciroc Le City, tourist service center, etc.",
+            "Lianyungang Museum, located at No. 68, Chaoyang East Road, Haizhou District, Lianyungang City, Jiangsu Province, covers an area of 45 acres, with a construction area of 13,600 square meters, and belongs to the Lianyungang Municipal Bureau of Culture, Radio, Television and Tourism.",
+            "Qinshan Island is one of the few near-shore islands in Jiangsu Province, about 8 kilometers away from Ganyu Binhai New City and 10 kilometers away from Haitou Port, with an area of about 0.19 square kilometers and a coastline length of about 2.8 kilometers. There are more than 20 major scenic spots on the island, such as Chess Bay, Qinshan Shenlu, Shouzhutai and Xu Fujing, which have always enjoyed the reputation of \"Qinshan Ancient Island, Yellow Sea Wonderland\".",
+            "And Lake Wetland Park is a typical wetland ecosystem, with abundant terrestrial and aquatic animal and plant resources, excellent water quality and a wide variety of plant species. The combination of a natural and wild ecological wetland system and an innocent and rustic pastoral landscape.",
+            "Dayi Mountain is a national 4A-level scenic spot, known as the first sacred mountain in Pingchuan, Huaibei. It belongs to the exposed Archean and Middle Proterozoic strata, and is a very ancient metamorphic rock hilly landform structure.",
+
             "柘荣鸳鸯头草场位于省级风景名胜区东狮山南侧，海拔980米至1110米之间，距柘荣县城约5公里。这是一片面积约5000亩，四周被阔叶和针叶混交林包围的草场。周边的山峰巍峨挺拔，充满阳刚之壮美。草场核心区的山岚远远望去，又如人工泥塑的微型盆景。草山低矮，绵延起伏;山脊走势，富有韵律，节奏中蕴含着温文典雅之美妙!",
             "九龙井风景区是生态示范区、省级园林县城福建省柘荣县生态旅游的一朵奇葩，是世界地质公园——白云山石臼群的重要组成部分，也是泛太姥旅游圈、闽东亲水游线路的重要组成部分，她集形态各异的龙井群、冰臼奇观、瀑布、青竹走廊、原生态山谷等景观于一体，由九龙井生态景区、金溪漂流景区（筹建中）、石山洋生态观光区三部分组成。",
             "东狮山耸立在柘荣县城东2公里处，面积25平方公里。东狮山是太姥山脉的主峰，海拔1480米，气势雄伟。东狮山属花岗岩地貌，岩体、岩洞千姿百态，有皤桃岩、马头岩、象鼻岩。千笋石、万书岩。擎天柱。玉屏洞、灵峰洞、“仙人锯板”等景点，山下龙并瀑布落差100余米，宽6米，蔚为壮观。",
@@ -195,6 +199,7 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             "百丈朝暾景区位于风景区中部，蟠桃映翠景区的东北面，面积约3.54平方公里，以绝岩峭壁，幽深洞岩为景观特色，主要景点有：罗隐湾、土地岩、清云宫、石门、石将军、风吹洞、石门楼、仙人脚印、观日台、灵岩洞、通真洞、灵峰洞、何仙姑洞、百丈灵岩等。",
             "蟠桃映翠景区位于风景区中西部，面积约1.88平方公里，以溪涧风光为景观特色，洞奇石怪，风景资源多而集中。主要景点有：迎宾亭、仙景岭、普光寺、仙掌泉、蟠桃溪、蟠桃岩、金蟾朝圣、蟠桃洞、马头岩、象鼻岩、玉屏洞、南天门、三曹院遗址、白马宫等。",
             "青岚湖水利风景区位于宁德市柘荣县，依托青岚水库而建，景区面积19.34平方公里，其中水域面积0.71平方公里，属于水库型水利风景区。区域内水体澄清，水质I级;负氧离子含量高，空气质量指数一级；森林覆盖率为86%,水土流失综合治理率高达96%；动植物资源丰富，生态环境优良。",
+
             "太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
             "牛郎岗海滨这里气候冬暖夏凉，素以“碧海金沙好消夏”而吸引各地游客慕名而至。牛郎岗海滨沙滩平坦、明净，环山绿树成荫，周围礁石造型各异，有鸳鸯礁、织女洞、海上一线天等自然景观。",
             "翠郊古民居是迄今为止在江南地区所发现的单体建筑面积大、保存完好的古民居，堪称江南古民居之杰作。位于福建省福鼎市20公里的白琳镇翠郊村翠郊，离太姥山大概两个小时左右的车程。",
@@ -214,6 +219,7 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             "西阳老人桥位于福鼎市管阳镇西阳村桥头自然村，始建于明正德年间(1506—1521)，清康熙、同治年间重修， 其是一座木结构的弧形古式桥梁，横跨于溪潭上，规模颇具壮观，系福鼎市现存唯一的木构虹梁式廊屋桥， 为县级文物保护单位。",
             "瑶列岛国家级海洋公园位于福鼎巿东南部，总面积6783公顷，其中重点保护区3330公顷，适度利用区2186公顷，预留区1267公顷。福瑶列岛由大箭山、小箭山、鸳鸯岛、银屿、鸟屿等11个岛屿和九个礁石组成，总面积24.5平方公里。古称福瑶列岛，意即\"福地、美玉”。其海洋生态旅游度假区包括天马公路、天湖原始生态别墅区、大使澳休闲区、高速游轮等。2016年11月9号，国家海洋局批准建立3个国家级海洋特别保护区、10个国家级海洋公园，宁德市福瑶列岛获批建立国家级海洋公园。",
             "资国寺为闽东千年古刹，也是福鼎市原六大寺之一。现总体面积 1000多亩，常住僧众近200人。位于福鼎市东南郊，距城五公里的莲蜂山上，建于唐咸通元年( 860 )。寺为唐冠庄叶庞兄弟所建，并施舍周围所有山场。宋大全祖师重兴，相传有九井十三墩，为鼎盛时期。明重建法堂，明中期本邑玉塘夏姓一支系施白金一百两助建大雄宝殿。清乾隆年间，重修祖师殿。光绪十六年( 1890 )，兴建伽蓝殿。",
+
             "杨家溪位于霞浦县牙城镇境内。拥有纬度超北的古榕树群和江南超大的纯枫叶林。其中值得一提的是一株“榕树王”，它的树龄已有800多年，树干周长12.6米，冠幅直径51米，高30米，树干中空，有7个洞口，洞内可容数人。每当早晨的阳光斜斜地洒进树林，斑驳的树影在光影的晃动下展示着它的魔法，营造了一种如梦似幻的感觉。",
             "罗汉溪，源于福建省霞浦县柏洋乡洋里土勃头村，呈西北—东南流向。溪流经横江、溪西、洋沙溪，于下村汇集桐油溪支流，经百步溪，出水磨坑、大桥头入后港海。其主要支流桐油溪，源于水门乡百笕村，流域面积42平方公里，河道长度17公里。罗汉溪是霞浦县三大河流之一，蕴含丰富的水资源，是霞浦县最重要的集储水发电、农业灌溉、城市饮用水为一体的水源河流。罗汉溪又是具有独特山水景色的河流，第四纪冰川遗迹冰臼、巨石滩、峡谷、岩崖瀑布、两岸山景，绘就秀丽的山水画卷，有着重要的旅游观光价值。",
             "位于霞浦县城东北5公里处，在古代曾为重要的海港，因其海岸山石呈赤红色而得名。",
@@ -225,12 +231,13 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             "小皓的海滩是摄影者来到霞浦一定要前往的一站，潮水的涨落、季节的变换、月落日升，小皓也在每天以崭新的姿态呈现出她的五彩斑斓。同样的潮水，不同样的光影，同样的劳作，不同样的心情，摄影者总能创作出无尽的精美作品。小皓主要以沙质滩涂为主，当在顺光位置拍摄时能看到山下那一块块巨大的金黄滩涂随波而变，在逆光位置观赏这片滩涂时，镜头中那一条条从沙滩上流淌过的溪水，化作蜿蜒曲折的滩涂动脉，闪烁着迷人的银色光芒，令人兴奋不已。",
             "溪水流程20多公里，清澈见底，其间潭、濑、滩交替分布。山绿水碧，稀有树木花早异彩纷呈，樟树、枫树、榕树、花竹、万竹、金竹、杜鹃、黄杨、芦苇成片分布。“文广断船”、“金龟戏曾鳖”、“观音坐莲”等30多处人文景观，栩栩如生，维妙维肖。溪中盛产香鱼、龙鳗、毛蟹、甲鱼、鲤鱼等淡水珍品，还有鸳鸯、绶带、水獭等珍稀动物。"
     };
-    private String[] dizhi ={"蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区",
+    private String[] dizhi ={
+            "蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区","蕉城区",
             "古田县","古田县","古田县","古田县","古田县","古田县","古田县","古田县","古田县","古田县","古田县",
             "屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县","屏南县",
             "周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县","周宁县",
             "寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县","寿宁县",
-            "福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市","福安市",
+            "Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang","Lianyungang",
             "柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县","柘荣县",
             "福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市","福鼎市",
             "霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县","霞浦县"
