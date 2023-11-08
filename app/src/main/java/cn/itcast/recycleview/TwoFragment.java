@@ -120,20 +120,39 @@ public class TwoFragment extends Fragment {
     private String[] zhepingfen = {"3.7分","3.7分","3.7分","3.5分","3.5分","3.5分","3.5分"};
     private String[] zhetime = {"暂无营业时间","10:00-13:00,16:00-23:00","13:30-24:00","暂无营业时间","16:30-24:00","08:30-14:00,16:00-22:00","10:00-次日01:30"};
 
-    //福鼎市
-    private String[] fudingname = {"金九龙大酒店-中餐厅","老家饭庄","闲云居","三门里逍遥林","东源大酒店","老百货自助火锅城（人本超市店）","百威火锅城（古城西路店）","山水人家休闲山庄"};
-    private  String[]  fudingicons = {"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E9%BC%8E%E5%B8%82/jinjiulongdajiudain.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E9%BC%8E%E5%B8%82/laojiafangzhuang.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E9%BC%8E%E5%B8%82/xianyunju.jpg",
-            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhappy.online.sh.cn%2Fimages%2Fattachement%2Fjpg%2Fsite1%2F20211105%2FIMG509a4c17ec4458609894080.jpg&refer=http%3A%2F%2Fhappy.online.sh.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669901853&t=b17298d1290f6de87693bf5473080002",
-            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F8718367adab44aedb9c6fd3db11c8701a08bfb5b&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669901853&t=58b5bb1df700b36afdf9e9b15d8148b2",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E9%BC%8E%E5%B8%82/laobaihuozizhuhuoguo.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E7%BE%8E%E9%A3%9F/%E7%A6%8F%E9%BC%8E%E5%B8%82/baiweihuoguocheng.jpg",
-            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F1e30e924b899a9014c08a1eb28da1d7b02087af45f94&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669901853&t=34b0b4cb709fec3fcb39380b7215410f"};
-    private String[] fudingbuy = {"¥100/人","¥25/人","¥40/人","¥65/人","¥162/人","¥42/人","¥47/人","¥50/人"};
-    private String [] fudingintroduce = {"其他中餐 福鼎市中心城区","其他中餐 福鼎市中心城区","创意菜 福鼎市其他","其他中餐 福鼎市其他","福建菜 福鼎市中心城区","自助餐 福鼎市中心城区","火锅 福鼎中心城区","其他美食 福鼎市其他"};
-    private String[] fudingpingfen = {"3.7分","3.4分","3.5分","3.4分","4.0分","3.6分","3.7分","3.7分"};
-    private String[] fudingtime = {"11:00-22:00","11:00-14:00,16:00-22:00","暂无营业时间","11:00-14:00,17:00-22:30","10:00-22:00","11:00-14:00,17:00-21:30","10:00-次日01:30","10:00-次日01:30"};
+    //Nantong
+    private String[] nantongname = {
+            "Grilled Whole Fish outside the River Edge",
+            "Haidilao Hotpot",
+            "Buffet Barbecue",
+            "Star Coast Seafood Restaurant",
+            "Yao Ji private room dishes",
+            "Orchid Restaurant",
+           };
+    private  String[]  nantongicons = {
+            "https://dimg04.c-ctrip.com/images/100l0k000000ckq6a7836_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/10020k000000cprlq0D59_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/0101s1200098pyyx7E4FE_C_1600_1200.png",
+            "https://dimg04.c-ctrip.com/images/01011120008fzml91694B_R_1600_10000.jpg",
+            "https://dimg04.c-ctrip.com/images/100s16000000zte1iB937_C_1600_1200.jpg",
+            "https://dimg04.c-ctrip.com/images/0104t1200091xedcsC5C5_R_10000_1200.jpg"};
+    private String[] nantongbuy = {"¥180/person","¥140/person","¥65/person","¥162/person","¥142/person","¥147/person"};
+    private String [] nantongintroduce = {
+            "F5, Nantong CBD, No.12 Taoyuan Road, Chongchuan District",
+            "F6, Golden Eagle Shopping Center, No.57 Gongnong Road, Chongchuan District",
+            "Room 4009, 4th Floor, West Block, Wenfeng City Plaza, No.1 Hongqiao Road",
+            "No. 2, Evergrande Venice Bar Street, Diding Highway",
+            "Yinyang Town Evergrande sea Venice Evergrande Food Street y38",
+            "No.5 Huancheng South Road, Chongchuan District",
+            };
+    private String[] nantongpingfen = {"3.7 points","3.4 points","3.5 points","3.4 points","4.0 points","3.6 points"};
+    private String[] nantongtime = {
+            "11:00 am-22:00 pm",
+            "11:00 am-14:00pm,16:00 pm-22:00 am",
+            "11:00 am-14:00 pm,17:00 pm-22:30 pm",
+            "10:00 am-22:00 pm",
+            "11:00 am-14:00 pm,17:00 pm-21:30 pm",
+            "10:00 am-01:30 am"};
 
     //霞浦县
     private String[] xianame = {"晨曦大酒店","环海大酒楼","鑫鑫饭店","台湾欣乐园","赵妈私房菜排挡","浦天酒店-中餐厅","人民公社（霞浦店）"};
@@ -230,13 +249,13 @@ public class TwoFragment extends Fragment {
             pingfen = zhepingfen;
             jiaotime = zhetime;
         }
-        if(name_receive1.equals("福鼎市")){
-            name1 = fudingname;
-            icons = fudingicons;
-            buy =fudingbuy;
-            introduces = fudingintroduce;
-            pingfen = fudingpingfen;
-            jiaotime = fudingtime;
+        if(name_receive1.equals("Nantong")){
+            name1 = nantongname;
+            icons = nantongicons;
+            buy = nantongbuy;
+            introduces = nantongintroduce;
+            pingfen = nantongpingfen;
+            jiaotime = nantongtime;
         }
         if(name_receive1.equals("霞浦县")){
             name1 = xianame;

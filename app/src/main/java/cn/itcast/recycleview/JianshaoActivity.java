@@ -46,26 +46,14 @@ public class JianshaoActivity extends AppCompatActivity {
            "        The geological formation of Huaguo Mountain is closely related to the tectonic movement and erosion of the earth's crust, and has experienced a long geological history and the influence of natural action, forming a unique landform landscape, and the landform of Huaguo Mountain in the scenic area is composed of red granite, with steep mountains and peculiar shapes.",
            "        The scenic area where Huaguo Mountain is located has been named as a national key scenic spot, a national AAAAA tourist area, and a national geological park."};
 
-    private String[] fudingimages1={"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding1.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding2.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding3.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding4.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding5.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding6.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding7.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding8.jpg",
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding9.jpg" ,
-            "https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/fuding10.jpg"};
-    private String[] fudingintroduces1 = {"        太姥山以花岗岩峰林岩洞为特色，融山、海、川和人文景观于一体，拥有山峻、石奇、洞异、溪秀、瀑急等众多自然景观以及古刹、碑刻等丰富的人文景观，在这里，可以登山、观海、探洞，也可以泛溪、寻古、采风……",
-            "        太姥娘娘雕像造型方中有圆，以方为主，吸收了北魏石窟雕像的秀骨清相的特点，揉进少许盛唐时代人物面部的丰润，同时又从汉俑中吸取单纯简洁之韵味，使得雕像造型显得敦厚、祥和、仁慈和智慧。状为迎海风徐徐前行，头略低垂，慈目微启，时时关注着山下芸芸众生。",
-            "        在景区广场游唐朝楞伽宝塔和国兴寺遗址；在龙潭湖仰观乌龙岗奇峰及其水中倒影，登观雾岗做一回腾云驾雾的活神仙；穿过挂满紫藤的绿色长廊，登上长萨公岭，沿途林木参差，山花烂漫；到涌翠亭，可近观夫妻峰，眺望元宝石，驻足欣赏“太姥无俗石”摩崖石刻和海浪石，还有素有天然空调美誉的柳杉坪。",
-            "        传说中的东海诸仙每年都要来太姥山相聚，迎仙台便是太姥娘娘迎接诸仙的地方，迎仙台也是欣赏太姥山的肖形景观要在集中处，四周各式各样的肖形景观，宛若随意摆设抽象派雕像艺术大师的巨型作品，形神兼备，惟妙惟肖，令人目不暇接。",
-            "        此处岩洞众多，有特色的要数素有洞中乐园之称的葫芦洞，紧接着是四通八达的将军洞，出洞时回头可赏妙趣横生的亲嘴岩。出将军洞，到V字形龙须岭，岭底可观高40余米的擎天巨柱天柱峰，两条山道通往大磐石、观海台，皆是登高望海观景好去处。",
-            "        一片瓦是一处以幽取胜的佳境。挤过仅可容一人侧身而过的一线天洞，穿过白马洞，便到一片瓦。来到这里，不妨在太姥娘娘修道的鸿雪洞歇个脚，用丹井水泡一壶太姥娘娘传下的绿雪芽茶，边听太姥娘娘升天故事，边赏金龟爬壁、金鸡报晓等景观群。",
-            "        香山寺始建于明朝，兰花盛开时暗香涌动，故而得名；五百罗汉堂内的罗汉均为缅甸汉白玉精雕细琢而成，为国内一绝；九鲤湖小巧玲珑，倒映着九鲤奇峰，湖光山色，是风光摄影的绝妙点。",
-            "        九鲤峰以峰石峥嵘见长，集峰、岩、洞于一体，极具太姥特色。登陀九岭可直抵紫烟岭，其尽头悬崖边上的御风桥，横跨于深谷之上，可近观九鲤朝天奇景；站在两扇陡峭岩壁对峙的南天门，可远眺海市蜃楼般的香山寺；穿南天门洞可直抵南天门，洞内树藤缠绕，曲折崎岖，趣味无穷。",
-            "        摩霄峰是太姥山的登高远眺的上佳去处，也可借宿赏月、观日出；峰下有唐玄宗年间建造的白云禅寺、摩尼教遗址摩尼宫，还有美女献花、石船等景观。白云禅寺周边，有摩崖石刻，流米洞、金蟾含钱树等景观。摩霄峰旁，就是覆鼎峰，建有观日台。",
-            "        来到乌龙岗，可在十八罗汉头顶攀登，在曝龙背上漫步，在其他游客翘首眺望的风景里穿梭。至此，你会感觉美景看都看不过来了，时而俯瞰悬崖深谷，近观峰林耸立，体验太姥山的峰险奇观；时而放眼重峦叠嶂，时而极目长天碧海，感受山海大观的意境。"};
+    private String[] nantongimages1={
+            "https://bkimg.cdn.bcebos.com/pic/0b46f21fbe096b6303d724fc0e338744eaf8ac54?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto",
+            "https://bkimg.cdn.bcebos.com/pic/2934349b033b5bb550adafd635d3d539b600bca4?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" ,
+            "https://bkimg.cdn.bcebos.com/pic/6c224f4a20a4462392b30d489b22720e0cf3d79b?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto"};
+    private String[] nantongintroduces1 = {
+            "        The formation of the five Mountains has been 350 million to 400 million years ago, [2] The Han Dynasty \"Literature General Examination\" record: Hailing, Han County, there is Wolf Mountain. [3] Huangnishan (29.3 meters), Ma 'anshan (49.4 meters), Wolf Mountain (104.8 meters), Jianshan (80.5 meters) and Junshan (108.5 meters) cover an area of 0.728 square kilometers.。",
+            "        The five mountains in the Wolf Mountain Scenic Area were formed by strong crustal changes and sea and land changes, which have a history of 350 million to 400 million years, 1 million years earlier than the Himalayas. 7,500 years ago, Wolf Mountain was still a small island in the vast sea.",
+            "        The cliff on the north slope of Wolf Mountain was formed during the Yanshan Movement 150 million to 70 million years ago. Nanding is a single mountain, with rock strata inclined to the southeast and an inclination of about 15°."};
 
     private String[] guimages1={"https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D/gu1.jpg"};
     private String[] guintroduces1 = {"        翠屏湖位于古田县城东郊，翠屏湖距城关3公里，翠屏湖属亚热带气候，翠屏湖中烟波浩淼，空气清新，四季如春，翠屏湖水域面积达37.1平方公里，翠屏湖蓄水量为6.41亿立方米，水质碧澄（达到国家二级标准）。三十六个大小岛屿，隔水相峙，沿翠屏湖有被省人民政府列为省级文物保护单位的海内外公认的\"顺天圣母\"陈靖姑祖庙临水宫。"};
@@ -134,10 +122,10 @@ public class JianshaoActivity extends AppCompatActivity {
             introduces1 = lianintroduces1;
             text2.setText("Mount Huaguoshan");
         }
-        if(name_receive.equals("福鼎市")){
-            images1 = fudingimages1;
-            introduces1 = fudingintroduces1;
-            text2.setText("太姥山风景名胜区");
+        if(name_receive.equals("Nantong")){
+            images1 = nantongimages1;
+            introduces1 = nantongintroduces1;
+            text2.setText("the Wolf Mountain");
         }
         if(name_receive.equals("古田县")){
             images1 = guimages1;

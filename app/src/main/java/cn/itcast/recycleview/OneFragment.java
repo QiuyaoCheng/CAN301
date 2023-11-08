@@ -85,7 +85,7 @@ public class OneFragment extends Fragment {
             "想要游览寿宁，寿宁福宁宾馆将会是一个不错的的住宿之选。优美的环境，再搭配上细致周到的服务，酒店的休闲区定能满足您的品质需求"};
 
     //福安市
-    private String[] lianname = {"Huaguoshan Hotel","Sotitel Lianyungang Suning","Zhongyin Mingdu Hotel","Addo Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
+    private String[] lianname = {"Huaguoshan Hotel","Sotitel Lianyungang Suning","Zhongyin Mingdu Hotel","Atour Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
     private  int[]  lianicons = {R.drawable.huah,R.drawable.soh,R.drawable.mingh,R.drawable.addoh,R.drawable.jinh,R.drawable.homeh,R.drawable.hanh};
 //    private  int[]  lianicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali};
     private String[] lianbuy = {"¥91","¥112","¥145","¥105","¥116","¥105","¥150"};
@@ -112,15 +112,31 @@ public class OneFragment extends Fragment {
 
 
     //福鼎市
-    private String[] fudingname = {"福鼎太姥大酒店","福鼎艾美酒店","福鼎山水假日酒店","锦江之星福鼎太姥大道店","锐思特酒店福鼎南站店","福鼎太姥山澳莱大酒店"};
-    private  int[]  fudingicons = {R.drawable.tailaoshan,R.drawable.fudingaimei,R.drawable.fudingshanshuijiari,R.drawable.jinjiangzhixin,R.drawable.ruisitefuding,R.drawable.aolaidajiudian};
-    private String[] fudingbuy = {"¥126","¥96","¥133","¥132","¥161","¥122"};
-    private String [] fudingintroduce = {"福鼎太姥大酒店是希瑞连锁旗下一家分店，集客房、会议、商务、旅游为一体的多功能,智能化管理的商务连锁酒店。",
-            "福鼎艾美酒店店地处福鼎市位于繁华市中心老街海口街,交通便利，出行方便，毗邻福鼎市汽车南站、汽车北站，门口就有公交站，也能快速到达福鼎动车站;周边特色餐饮景点多，福鼎著名的海鲜一条街就在旁边，走路即可到达，著名的风景名胜区太姥山风景区有动车可以直达。福鼎艾美酒店是您商务出行、旅游住宿的选择。",
-            "本酒店位于太姥山旅游集散中心斜对面，临近秦川汽车站，有停车位，电梯，交通便利。客房温馨舒适，服务周到热情，是您出差旅行的优选之地。",
-            "锦江之星福鼎太姥大道店座落于闽浙交界处的海滨城市及旅游城市福鼎市，酒店位于市中心繁华商业区的太姥大道上，临近城市绿肺风景旅游区-太姥山。酒店周边有着令人流连忘返的美食一亲街,2贸商城、温州商城、茶叶街、福鼎特产等，步行即可直接到达。",
-            "锐思特酒店起源于2006年,是逸柏酒店集团旗下个“舒适商旅型\"品牌。以追求“高性价比的品质\"为品牌的市场定位。多年来，通过高性价比的“投资设计\"及良好的产品体验性能，获得了众多投资者与消费者的认可。作为集团旗下精选商务酒店品牌，锐思特酒店结合家居理念精心设计，以“时尚、舒适、简约\"为主导，精致配置“高星级床上用品”、“时尚卫浴\"等酒店核心部件，打造出酒店产品的极致化体验。",
-            "座落在风景秀丽的宁德福鼎太姥山脚下，现代化的装修风格，智能化的客房，人性化的服务，带给您星级版的品质体验，酒店一楼设澳莱庄园，主营武夷岩茶、福鼎白茶、澳洲原装原瓶进口葡萄酒,是您品茗、品酒商务洽谈的绝佳选择!"};
+    private String[] nantname = {
+            "Atour",
+            "InterContinental Nantong",
+            "the modern Holiday Inn Nantong Oasis International",
+            "Jinshi International Hotel",
+            "Jinjiang Inn",
+            "Hilton Garden Inn Nantong Xinghu"};
+    private  int[]  nanticons = {
+            R.drawable.nanatour,
+            R.drawable.nanbin,
+            R.drawable.nanlvzhou,
+            R.drawable.nanjinshi,
+            R.drawable.nantjinjiang,
+            R.drawable.nantxierdun};
+//    private  int[]  fudingicons = {R.drawable.tailaoshan,R.drawable.fudingaimei,R.drawable.fudingshanshuijiari,R.drawable.jinjiangzhixin,R.drawable.ruisitefuding,R.drawable.aolaidajiudian};
+    private String[] nantbuy = {"¥126","¥96","¥133","¥132","¥161","¥122"};
+    private String [] nantintroduce = {
+            "Located in Nantong 6 miles from Nantong Underwater World Atour Hotel (Nantong Zhongcheng) has air-conditioned accommodations and a restaurant. Free WiFi and a 24-hour front desk are available.",
+            "All rooms are equipped with flat-screen TV, minibar and coffee/tea makers. The spacious bathrooms are facilitated with a shower area, an over-sized bathtub and branded bathroom amenities. InterContinental Nantong provides free parking, gym, indoor pool and 24-hour front desk service.",
+            "The Modern Holiday Inn Nantong Oasis International features an indoor pool, pampering spa treatments and a sauna. Free parking and 4 dining options are available. ",
+            "Welcome to Jinshi International Hotel, a nice option for travelers like you. The rooms offer a minibar and air conditioning, and getting online is possible, as free wifi is available, allowing you to rest and refresh with ease.",
+            "Jinjiang Inn Nantong Gongnong Road offers accommodation in Nantong. Guests can enjoy the on-site restaurant. All rooms come with a flat-screen TV with cable channels.",
+            "Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi throughout the property."};
+
+
     //霞浦县
     private String[] xianame = {"霞浦县锦都宾馆","城市便捷酒店宁德霞浦店","福维尔酒店","锐思特酒店霞浦山河路店","骏怡连锁酒店（霞浦店）","速8酒店霞浦九龙街店","龙云宾馆","霞浦千禧之家假日酒店"};
     private  int[]  xiaicons = {R.drawable.jindujiudian,R.drawable.chengshibianjie,R.drawable.fuweier,R.drawable.ruisitejxiapuxian,R.drawable.junyiliansuojiudian,R.drawable.subaxiapu,R.drawable.longyun,R.drawable.xiapuqianxizhijia};
@@ -199,11 +215,11 @@ public class OneFragment extends Fragment {
             buy =zhebuy;
             introduces = zheintroduce;
         }
-        if(name_receive1.equals("福鼎市")){
-            name1 = fudingname;
-            icons = fudingicons;
-            buy =fudingbuy;
-            introduces = fudingintroduce;
+        if(name_receive1.equals("Nantong")){
+            name1 = nantname;
+            icons = nanticons;
+            buy =nantbuy;
+            introduces = nantintroduce;
         }
         if(name_receive1.equals("霞浦县")){
             name1 = xianame;
