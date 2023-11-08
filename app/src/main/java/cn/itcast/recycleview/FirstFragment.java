@@ -93,7 +93,8 @@ public class FirstFragment extends Fragment {
 //    private String[] fudingbuy;
 //    private  String[] fudingpingfen;
 //    private String[] fudingintroduce;
-private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景区","福建支提山国家森林公园","宁德洋中水利风景区","宁德蕉城区上金贝中华畲家寨","洪口水库","宁德鹤林宫","宁德市博物馆",
+private String[] nametwo = {
+        "三都澳","霍童古镇","宁德东湖水利风景区","福建支提山国家森林公园","宁德洋中水利风景区","宁德蕉城区上金贝中华畲家寨","洪口水库","宁德鹤林宫","宁德市博物馆",
         "古田钱来山景区","翠屏湖","齐云寺","古田溪山书画院","长洋徐氏古民居群","金钟湖山庄","凤林祠","凤林祠坐","蝉林祠","圆瑛故居","古田临水宫",
         "白水洋","鸳鸯溪","大棠滑草场","际头耕读文化大观园","漈头古村","纱帽岩","万安桥","百丈漈瀑布","仙山牧场","鼎潭仙宴谷","国家地质公园","观景台","仙女瀑",
         "鲤鱼溪","九龙漈风景名胜区","陈峭古村","周宁滴水岩","林公忠平王祖殿","周宁般若寺","九龙石窟","高山明珠","浦源郑氏宗祠",
@@ -103,7 +104,8 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
         "太姥山","牛郎岗海滨景区","翠郊古民居","九鲤溪瀑","小白鹭海滨度假村","大嵛山岛","嵛山岛","赤溪村","石兰村","潋城城堡","点头妈祖宫","福鼎香山寺游览区","天门岭游览区","冷城古堡位","灵峰寺","国兴寺","西阳老人桥","瑶列岛国家级海洋公园","资国寺",
         "杨家溪","罗汉溪景区","赤岸村","霞浦松山天后圣母行宫","空海大师纪念堂","霞蒲滩涂","北岐滩涂","霞浦县城","小皓海滩","七都溪"
 };
-    private int[] icons = {R.drawable.sanduao,R.drawable.huotongguzheng,R.drawable.shuili,R.drawable.senglin,R.drawable.yangzhong,R.drawable.shangjinbei,R.drawable.hongshui,R.drawable.helin,R.drawable.bowuguan,
+    private int[] icons = {
+            R.drawable.sanduao,R.drawable.huotongguzheng,R.drawable.shuili,R.drawable.senglin,R.drawable.yangzhong,R.drawable.shangjinbei,R.drawable.hongshui,R.drawable.helin,R.drawable.bowuguan,
             R.drawable.gutianxian,R.drawable.cuipinghu,R.drawable.qiyunshi,R.drawable.gutianxishan,R.drawable.changyangxunshi,R.drawable.jinzhonghushanzhuan,R.drawable.fenglinshi,R.drawable.fenglinshizuo,R.drawable.changlinshi,R.drawable.yuanyinguju,R.drawable.gutianlinshuigong,
             R.drawable.baishuiyang,R.drawable.yuanyangxi,R.drawable.datang,R.drawable.daguanyuan,R.drawable.jitoucun,R.drawable.shamaoyan,R.drawable.wanganqiao,R.drawable.baishangpubu,R.drawable.xianshanmuchang,R.drawable.dingtanxianyangu,R.drawable.guojiagongyuan,R.drawable.guanjingtai,R.drawable.xiannvpu,
             R.drawable.liyuxi,R.drawable.jiulongfengjingmingshengqu,R.drawable.chenxiaogucun,R.drawable.zhouningdishuiyan,R.drawable.zudian,R.drawable.zhouningbanruosi,R.drawable.jiulongshiku,R.drawable.gaoshanmingzhu,R.drawable.puyuanzongsi,
@@ -114,7 +116,8 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
             R.drawable.yangjiaxi,R.drawable.luohanxi,R.drawable.chianqiao,R.drawable.shengmuxinggong,R.drawable.jiniantang,R.drawable.xiaputantu,R.drawable.beiqitangtu,R.drawable.xiapuxiancheng,R.drawable.xiaohaohait,R.drawable.qiduxi
 
     };
-    private String[] buy={"¥32","免费","免费","免费","免费","¥35","免费","免费","免费",
+    private String[] buy={
+            "¥32","免费","免费","免费","免费","¥35","免费","免费","免费",
             "¥44","¥80","¥68","免费","免费","免费","免费","免费","免费","免费","免费",
             "¥120","¥73","免费入园","免费","免费","免费","免费","免费","免费","免费","免费","¥70","¥70",
             "¥60","免费","无需门票","免费","免费","免费","无需门票","免费","免费",
@@ -433,7 +436,6 @@ private String[] nametwo = {"三都澳","霍童古镇","宁德东湖水利风景
                     intent.putExtra("detail_buy",fudingbuy[position]);
                     intent.putExtra("detail_introduce",fudingintroduce[position]);
                     intent.putExtra("f",f);
-                    intent.putExtra("name",nameone);
                     startActivity(intent);
 
                 }

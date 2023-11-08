@@ -34,14 +34,17 @@ public class JiudianActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private HomeAdapter mAdapter;
     private DialogOrderTypeFragment mFragment2=new DialogOrderTypeFragment();
-    private String[] name1 = {"大床房","双床房","优质大床房","优质双床房","豪华套房"};
-    private int[] image = {R.drawable.achuncanguang,R.drawable.shuangchuangfang,R.drawable.youzhidachuangfang,R.drawable.youzhishuangchuangfang,R.drawable.haohuataofang};
+    private String[] name1 = {"Standard single room","Standard twin room","Business single room","Deluxe twin room","Deluxe suite"};
+    private int[] image = {R.drawable.danrenchuang,R.drawable.shuangrenchuang,R.drawable.busdanren,R.drawable.busshuangren,R.drawable.delsuite};
+//    private int[] image = {R.drawable.achuncanguang,R.drawable.shuangchuangfang,R.drawable.youzhidachuangfang,R.drawable.youzhishuangchuangfang,R.drawable.haohuataofang};
+
     private  String[] buy ={"¥123","¥129","¥177","¥177","¥235"};
-    private  String[] introduces = {"大床  有窗  18-22平方米",
-            "双床房  有窗  18-22平方米",
-            "大床  有窗  24-26平方米",
-            "双床  有窗  24-26平方米",
-            "大床  有窗  44-46平方米"};
+    private  String[] introduces = {
+            "single bed  18-22 square meters",
+            "double bed  18-22 square meters",
+            "single bed  24-26 square meters",
+            "double bed  24-26 square meters",
+            "single bed  44-46 square meters"};
     int imageone;
     String nameone;
     String buyone;
@@ -160,17 +163,17 @@ public class JiudianActivity extends AppCompatActivity {
         imgs = new ArrayList<>();
         if(name.equals("君安大酒店")){
             imgs.add(R.drawable.dachuangfa);
-           imagePath.add("https://cn.bing.com/images/search?view=detailV2&ccid=YzkB0Ho9&id=08F071B9C44624151A598E7EDD8FC90B35CDEBF1&thid=OIP.YzkB0Ho9GM321YoMzHQHjQHaFo&mediaurl=https%3a%2f%2fts1.cn.mm.bing.net%2fth%2fid%2fR-C.633901d07a3d18cdf6d58a0ccc74078d%3frik%3d8evNNQvJj91%252bjg%26riu%3dhttp%253a%252f%252fimg.hkwb.net%252fatt%252fsite2%252f20120308%252f633901d07a3d18cdf6d58a0ccc74078d.jpg%26ehk%3dmupUGFlfxfEilMIkHoDFPVYnfR%252bSaF86fmgOkvvU8YM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1580&q=%e4%b8%96%e7%95%8c%e6%97%85%e6%b8%b8%e8%83%9c%e5%9c%b0&simid=608053720556060181&FORM=IRPRST&ck=35DA4357AD6688BF3018978C17762F1E&selectedIndex=1.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/3.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/2.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/1.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/10.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/5.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/6.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/4.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/9.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/7.png");
-//            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/8.png");
+            imagePath.add("https://cn.bing.com/images/search?view=detailV2&ccid=YzkB0Ho9&id=08F071B9C44624151A598E7EDD8FC90B35CDEBF1&thid=OIP.YzkB0Ho9GM321YoMzHQHjQHaFo&mediaurl=https%3a%2f%2fts1.cn.mm.bing.net%2fth%2fid%2fR-C.633901d07a3d18cdf6d58a0ccc74078d%3frik%3d8evNNQvJj91%252bjg%26riu%3dhttp%253a%252f%252fimg.hkwb.net%252fatt%252fsite2%252f20120308%252f633901d07a3d18cdf6d58a0ccc74078d.jpg%26ehk%3dmupUGFlfxfEilMIkHoDFPVYnfR%252bSaF86fmgOkvvU8YM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1580&q=%e4%b8%96%e7%95%8c%e6%97%85%e6%b8%b8%e8%83%9c%e5%9c%b0&simid=608053720556060181&FORM=IRPRST&ck=35DA4357AD6688BF3018978C17762F1E&selectedIndex=1.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/3.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/2.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/1.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/10.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/5.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/6.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/4.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/9.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/7.png");
+            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%90%9B%E5%AE%89%E5%A4%A7%E9%85%92%E5%BA%97/8.png");
 
 
 
@@ -252,14 +255,7 @@ public class JiudianActivity extends AppCompatActivity {
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+
         }
         if(name.equals("宁德市东方国际威悦大酒店")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E8%95%89%E5%9F%8E%E5%8C%BA/%E5%AE%81%E5%BE%B7%E5%B8%82%E4%B8%9C%E6%96%B9%E5%9B%BD%E9%99%85%E5%A8%81%E6%82%A6%E5%A4%A7%E9%85%92%E5%BA%97/weiyue.png");
@@ -1210,301 +1206,116 @@ public class JiudianActivity extends AppCompatActivity {
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
         }
-        if(name.equals("天隆商务宾馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/tianlong.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%A4%A9%E9%9A%86%E5%95%86%E5%8A%A1%E5%AE%BE%E9%A6%86/9.png");
+        if(name.equals("Huaguoshan Hotel")){
+            imagePath.add("https://cf2.bstatic.com/xdata/images/hotel/max1280x900/109834211.jpg?k=fe2d35607e558136791f19dfe304f45ce21c2b292851fa7318957f27ae503faf&o=&hp=1");
+            imagePath.add("https://cf2.bstatic.com/xdata/images/hotel/max1280x900/283808630.jpg?k=90f0e2345066774b56c53aa6f532d41723307b26355d2061e86206f4b76a963d&o=&hp=1");
+            imagePath.add("https://cf2.bstatic.com/xdata/images/hotel/max1280x900/109833877.jpg?k=f580d8c2e7e5f9105738dfadfe856074c265df44ca5167d746e5339574dade6b&o=&hp=1");
+            imagePath.add("https://ts1.cn.mm.bing.net/th/id/R-C.20dfc8d06909e83cccd818be2f8670b1?rik=e1lBw78gSY60%2bA&riu=http%3a%2f%2fimg1n.soufunimg.com%2fzxb%2f201609%2f13%2f530%2faa824db6dd5f6d568a9a3508dd3c4f92.jpeg&ehk=i%2fNotuidt81PD7ZqNLuBJakA0qZrrucqJ%2fZ3wQgxHoI%3d&risl=&pid=ImgRaw&r=0");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("宁德好乐迪假日酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/haoledi.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%A5%BD%E4%B9%90%E8%BF%AA%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("福安南舟宾馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/nanzhou.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%97%E8%88%9F%E5%AE%BE%E9%A6%86/9.png");
+        if(name.equals("Sotitel Lianyungang Suning")){
+            imagePath.add("http://sofitel-lianyungang-suning.31td.com/UploadFiles/2.jpg");
+            imagePath.add("http://sofitel-lianyungang-suning.31td.com/UploadFiles/3.jpg");
+            imagePath.add("http://sofitel-lianyungang-suning.31td.com/UploadFiles/4.jpg");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
         }
-        if(name.equals("福安花园宾馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/huayuan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E8%8A%B1%E5%9B%AD%E5%AE%BE%E9%A6%86/9.png");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("宁德尚客快捷酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/kuaijie.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E5%AE%81%E5%BE%B7%E5%B0%9A%E5%AE%A2%E5%BF%AB%E6%8D%B7%E9%85%92%E5%BA%97/9.png");
+        if(name.equals("Zhongyin Mingdu Hotel")){
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/72159141.jpg?k=b2d8b51f0a59f40443313c85b4c3b657de46aa8e486b0fa501c0f8501a5bc7ad&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/72159147.jpg?k=ad6a5f9a684cb9c3765fc670efeb69312059d2d1ca2ccf3f04fd83f09308c703&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/72159127.jpg?k=5b34fafe88106dbf449a155233df3c9492a4bf5ae10361a5b3d10219472bafc0&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("海鑫精品酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/haixingjingping.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E6%B5%B7%E9%91%AB%E7%B2%BE%E5%93%81%E9%85%92%E5%BA%97/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("福安华利宾馆")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/huali.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E5%8D%8E%E5%88%A9%E5%AE%BE%E9%A6%86/9.png");
+        if(name.equals("Atour Hotel")){
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/402255430.jpg?k=39b75ae81641eb97505f0c8ba17f73f6e56b660cebea6c70b39815e65077671f&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/402255425.jpg?k=f4fa6ab8456d9045a9467ad973560424bda3cc6483c7675244231410c7f48d4b&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/402255442.jpg?k=1f87822907dfe7af804b35e3db86069f67fd6732f384248c430afc79cbbeaa6a&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("福安铂晶悦己酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/bojingyueji.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E5%AE%89%E5%B8%82/%E7%A6%8F%E5%AE%89%E9%93%82%E6%99%B6%E6%82%A6%E5%B7%B1%E9%85%92%E5%BA%97/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
+        if(name.equals("Jinjiang Inn")){
+            imagePath.add("http://dimg04.c-ctrip.com/images//200t080000003b04dB4C8_R_550_412.jpg");
+            imagePath.add("http://dimg04.c-ctrip.com/images//20050700000025dgxA18C_R_550_412.jpg");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/78782917.jpg?k=04d4effb7e9a09830f72e005bb1caecd045404844b9a242467669059783eb6d2&o=");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+        if(name.equals("Home Inn")){
+            imagePath.add("https://images.bthhotels.com/homeinns/020073_a.jpg");
+            imagePath.add("https://media-cdn.tripadvisor.com/media/daodao/photo-s/04/51/ff/d2/caption.jpg");
+            imagePath.add("https://images.bthhotels.com/image/25c3b950-5cd6-4b0c-bc84-a3a5f833250c.png");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
+        }
+        if(name.equals("Hanting Hotel")){
+            imagePath.add("https://cdn-img.readytotrip.com/t/1024x768/content/1d/df/1ddf603dde686f438178c0b1180c9de8505d3a2d.jpeg");
+            imagePath.add("http://dimg04.c-ctrip.com/images//200e080000003db75C21D_R_550_412.jpg");
+            imagePath.add("https://cdn-img.readytotrip.com/t/1024x768/content/11/df/11dfab27475b757d6d90e1ef64e9bf747d996d0a.jpeg");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+        }
+
         if(name.equals("柘荣京鼎荣商务酒店")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/jingding.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/6.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E4%BA%AC%E9%BC%8E%E8%8D%A3%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/10.png");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+
         }
         if(name.equals("柘荣县富商商务酒店")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/fushang.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/8.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/9.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/haowangjiao.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AF%8C%E5%95%86%E5%95%86%E5%8A%A1%E9%85%92%E5%BA%97/2.png");
 
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+
         }
         if(name.equals("柘荣幽舍酒店")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/youshe.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/8.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%B9%BD%E8%88%8D%E9%85%92%E5%BA%97/1.png");
 
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+
         }
         if(name.equals("柘荣县宾馆")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/zherongxianbingguan.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/8.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/taimushan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E5%AE%BE%E9%A6%86/3.png");
 
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+
         }
         if(name.equals("柘荣县九华洲宾馆")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E6%9F%98%E8%8D%A3%E5%8E%BF/%E6%9F%98%E8%8D%A3%E5%8E%BF%E4%B9%9D%E5%8D%8E%E6%B4%B2%E5%AE%BE%E9%A6%86/jiuhuazhou.png");
@@ -1581,154 +1392,67 @@ public class JiudianActivity extends AppCompatActivity {
             imageTitle.add("景点图片");
             imageTitle.add("景点图片");
         }
-        if(name.equals("福鼎太姥大酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/taimushan.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%85%92%E5%BA%97/8.png");
+        if(name.equals("Atour")) {
+            imagePath.add("https://i.travelapi.com/lodging/38000000/37670000/37666700/37666651/79ba584e_z.jpg");
+            imagePath.add("https://i.travelapi.com/lodging/38000000/37670000/37666700/37666651/6a293fbf_z.jpg");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/207694728.jpg?k=d54f02e3c34a4874516ca0220781bbfaf730a4a9f319ce9668aa714a8c7ce95b&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
         }
-        if(name.equals("福鼎艾美酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/fudingaimei.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97/9.png");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("福鼎山水假日酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/fudingshanshuijiari.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%B1%B1%E6%B0%B4%E5%81%87%E6%97%A5%E9%85%92%E5%BA%97/9.png");
+        if(name.equals("InterContinental Nantong")){
+            imagePath.add("https://tse2-mm.cn.bing.net/th?id=OLC.behAZ8gW/s+pfQ480x360&rs=1&pid=ImgDet");
+            imagePath.add("http://dimg04.c-ctrip.com/images//200o0k000000buolg48CD_R_550_412.jpg");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/324802757.jpg?k=5c740981a119db9703ed2b8a934e90647e76543f3ae5a52834c1403518ee6ce4&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
         }
-        if(name.equals("锦江之星福鼎太姥大道店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/jinjiangzhixin.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%A6%E6%B1%9F%E4%B9%8B%E6%98%9F%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%A4%A7%E9%81%93%E5%BA%97/9.png");
+        if(name.equals("the modern Holiday Inn Nantong Oasis International")){
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/263334048.jpg?k=d5eab3fec85d95b0e8113a6a882c0f62a546c28e692013be9d38e4741086d0ad&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/263041325.jpg?k=afc487633b0a33e96924c55f4012f489ff07a7081454d9cfcf07794228305b7b&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/263334063.jpg?k=97126129e6f47d523154c6e24500d09d1944adede0dc62239db8ef1af0924fe6&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-        }
-        if(name.equals("锐思特酒店福鼎南站店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/ruisitefuding.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E9%94%90%E6%80%9D%E7%89%B9%E9%85%92%E5%BA%97%E7%A6%8F%E9%BC%8E%E5%8D%97%E7%AB%99%E5%BA%97/9.png");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
         }
-        if(name.equals("福鼎太姥山澳莱大酒店")){
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/aolaidajiudian.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/1.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/10.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/2.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/3.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/4.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/5.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/6.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/7.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/8.png");
-            imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E7%A6%8F%E9%BC%8E%E5%B8%82/%E7%A6%8F%E9%BC%8E%E5%A4%AA%E5%A7%A5%E5%B1%B1%E6%BE%B3%E8%8E%B1%E5%A4%A7%E9%85%92%E5%BA%97/9.png");
+        if(name.equals("Jinshi International Hotel")){
+            imagePath.add("http://dimg04.c-ctrip.com/images//200w050000000cx2hF8B5_R_550_412.jpg");
+            imagePath.add("http://dimg04.c-ctrip.com/images//200b0r000000hga3kDCC1_R_550_412.jpg");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/840x460/134270222.jpg?k=9d66e0a951477d57d6d0311127163eeaaf8cc9045ff13e714aac4504b4d903f8&o=");
 
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
-            imageTitle.add("景点图片");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
         }
+
+        if(name.equals("Jinjiang Inn")){
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/78769417.jpg?k=ffb2fbf99138d6f288835208effa75ebff7e2b2e3b9a4c0904dd268333b5e8d9&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/78769424.jpg?k=059b88928afa76bac9850804b34da98cee109cc4675f73404d124db4342bb3ef&o=");
+            imagePath.add("https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/78769419.jpg?k=e9efbfa64297990d081a2b99ad98f33e11bfad1fa30d42ae2afe35a1dccfa7d7&o=");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+        }
+
+        if(name.equals("Hilton Garden Inn Nantong Xinghu")){
+            imagePath.add("https://tse1-mm.cn.bing.net/th/id/OLC.AIC5tp0ASaQ9dA480x360?&rs=1&pid=ImgDet");
+            imagePath.add("https://tse3-mm.cn.bing.net/th/id/OLC.gJffZVCM29UZ4A480x360?&rs=1&pid=ImgDet");
+            imagePath.add("https://tse2-mm.cn.bing.net/th/id/OLC.s4KuzwjDPB30Wg480x360?&rs=1&pid=ImgDet");
+
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+            imageTitle.add("picture");
+        }
+
+
+
         if(name.equals("霞浦县锦都宾馆")){
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E9%9C%9E%E6%B5%A6%E5%8E%BF/%E9%9C%9E%E6%B5%A6%E5%8E%BF%E9%94%A6%E9%83%BD%E5%AE%BE%E9%A6%86/jindujiudian.png");
             imagePath.add("https://recycleimage.oss-cn-hangzhou.aliyuncs.com/%E9%85%92%E5%BA%97/%E9%9C%9E%E6%B5%A6%E5%8E%BF/%E9%9C%9E%E6%B5%A6%E5%8E%BF%E9%94%A6%E9%83%BD%E5%AE%BE%E9%A6%86/10.png");
@@ -1933,7 +1657,7 @@ public class JiudianActivity extends AppCompatActivity {
         banner.isAutoPlay(true);
         banner.setIndicatorGravity(BannerConfig.CENTER);
 //        banner.setImages(imagePath);
-        banner.setImages(imgs);
+        banner.setImages(imagePath);
         banner.start();
     }
     class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder>{

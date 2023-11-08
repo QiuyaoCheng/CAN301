@@ -75,7 +75,8 @@ public class OneFragment extends Fragment {
     private String[] shouname = {"寿宁帝豪商务宾馆","大都·豪庭宾馆","宁德寿宁柏悦宾馆","寿宁裕龙宾馆","寿宁悦龙宾馆","寿宁东湖大酒店","宁德寿宁聚源宾馆","寿宁福宁宾馆"};
     private  int[]  shouicons = {R.drawable.dihaoshangwu,R.drawable.dadu,R.drawable.boyue,R.drawable.yulong,R.drawable.yuelong,R.drawable.donghu,R.drawable.juyuan,R.drawable.funing};
     private String[] shoubuy = {"¥112","¥110","¥63","¥69","¥58","¥256","¥120","¥90"};
-    private String [] shouintroduce = {"寿宁宁德帝豪商务宾馆寿宁帝豪商务宾馆是一家主营住宿客房服务的精品酒店，位于县城东区的滨湖北路。宾馆客房装修精致、高档,设备完整、齐备。每一个房间都体现出宾馆对客人丝丝入微的贴心服务。竭诚欢迎每一位宾客的光临。",
+    private String [] shouintroduce = {
+            "寿宁宁德帝豪商务宾馆寿宁帝豪商务宾馆是一家主营住宿客房服务的精品酒店，位于县城东区的滨湖北路。宾馆客房装修精致、高档,设备完整、齐备。每一个房间都体现出宾馆对客人丝丝入微的贴心服务。竭诚欢迎每一位宾客的光临。",
             "大都·豪庭宾馆福建省宁德市寿宁县东区福宁街12号，大量免费停车位，临近有寿宁东区农贸批发市场，寿宁商贸城，超市便利店，商圈广场，餐饮店，休闲娱乐等等~",
             "房间配备:空调、电脑,光纤，24小时供应热水、高清电视、电风吹、拖鞋、洗浴用品、无线wifi、电热水壶、茶叶、茶杯、50兆苋带上网。宾馆客房经济实惠、方便快捷,服务热情周到、细致入微，是您商务出差,旅游观光的理想选择。",
             "寿宁裕龙宾馆环境优雅，方便快捷，宜家干净。",
@@ -85,7 +86,10 @@ public class OneFragment extends Fragment {
             "想要游览寿宁，寿宁福宁宾馆将会是一个不错的的住宿之选。优美的环境，再搭配上细致周到的服务，酒店的休闲区定能满足您的品质需求"};
 
     //福安市
-    private String[] lianname = {"Huaguoshan Hotel","Sotitel Lianyungang Suning","Zhongyin Mingdu Hotel","Atour Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
+    private String[] lianname = {
+            "Huaguoshan Hotel",
+            "Sotitel Lianyungang Suning",
+            "Zhongyin Mingdu Hotel","Atour Hotel","Jinjiang Inn","Home Inn","Hanting Hotel"};
     private  int[]  lianicons = {R.drawable.huah,R.drawable.soh,R.drawable.mingh,R.drawable.addoh,R.drawable.jinh,R.drawable.homeh,R.drawable.hanh};
 //    private  int[]  lianicons = {R.drawable.tianlong,R.drawable.haoledi,R.drawable.nanzhou,R.drawable.huayuan,R.drawable.kuaijie,R.drawable.haixingjingping,R.drawable.huali};
     private String[] lianbuy = {"¥91","¥112","¥145","¥105","¥116","¥105","¥150"};
@@ -102,7 +106,8 @@ public class OneFragment extends Fragment {
     private String[] zhename = {"柘荣京鼎荣商务酒店","柘荣县富商商务酒店","柘荣幽舍酒店","柘荣县宾馆","柘荣县九华洲宾馆","柘荣东华大酒店","宁德乘峰宾馆"};
     private  int[]  zheicons = {R.drawable.jingding,R.drawable.fushang,R.drawable.youshe,R.drawable.zherongxianbingguan,R.drawable.jiuhuazhou,R.drawable.donghuadajiudian,R.drawable.chengfengbinguan};
     private String[] zhebuy = {"¥113","¥143","¥153","¥234","¥202","¥268","¥73"};
-    private String [] zheintroduce = {"柘荣京鼎荣商务酒店:2021.6.26重装焕新，升级的是品质，提升的是服务，不变的是价格。我在京鼎荣商务酒店，恭候您的到来!",
+    private String [] zheintroduce = {
+            "柘荣京鼎荣商务酒店:2021.6.26重装焕新，升级的是品质，提升的是服务，不变的是价格。我在京鼎荣商务酒店，恭候您的到来!",
             "柘荣县富商商务酒店位于福建省宁德市柘荣县上桥路5-10号，在柘荣县车站附近，出门就可以上104国道，交通非常方便。柘荣县富商商务酒店于2009年开业至今，在2017年1月的时候重新翻新了一遍，房间设施齐全而且新，酒店客房部设在4-6楼，2-3梭定正洽，月电梯，非常适合出差的您。希望能给您带来愉快的入住。柘荣县富商商务酒店竭诚欢迎您的入住",
             "柘荣幽舍酒店位于太子参交易中心门口(二中旁)，酒店极简设计，干净整洁。周边景区:仙屿公园.东狮山风景区.步行可到。交通便利来“柘\"享受，我\"氧\"你。",
             "柘荣县宾馆座落于双城镇河滨西路，位于县城中心位置，靠近县政府，周边配套设施齐全，方便商务人士出行。柘荣是闽浙两省边界贸易点、国务院批准对外开放的全国55个县、市之一，是生态示范区，有“中国太子参之乡”、“中国民间文化艺术之乡\"的美誉。",
@@ -135,13 +140,12 @@ public class OneFragment extends Fragment {
             "Welcome to Jinshi International Hotel, a nice option for travelers like you. The rooms offer a minibar and air conditioning, and getting online is possible, as free wifi is available, allowing you to rest and refresh with ease.",
             "Jinjiang Inn Nantong Gongnong Road offers accommodation in Nantong. Guests can enjoy the on-site restaurant. All rooms come with a flat-screen TV with cable channels.",
             "Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi throughout the property."};
-
-
     //霞浦县
     private String[] xianame = {"霞浦县锦都宾馆","城市便捷酒店宁德霞浦店","福维尔酒店","锐思特酒店霞浦山河路店","骏怡连锁酒店（霞浦店）","速8酒店霞浦九龙街店","龙云宾馆","霞浦千禧之家假日酒店"};
     private  int[]  xiaicons = {R.drawable.jindujiudian,R.drawable.chengshibianjie,R.drawable.fuweier,R.drawable.ruisitejxiapuxian,R.drawable.junyiliansuojiudian,R.drawable.subaxiapu,R.drawable.longyun,R.drawable.xiapuqianxizhijia};
     private String[] xiabuy = {"¥60","¥148","¥164","¥117","¥160","¥175","¥79","¥129"};
-    private String [] xiaintroduce = {"酒店位于霞浦县县中心，周边交通便利，特色小吃街，娱乐场所，该店客房整洁，宽敞明亮，环境卫生，配套设施齐全，服务周到，方便入住",
+    private String [] xiaintroduce = {
+            "酒店位于霞浦县县中心，周边交通便利，特色小吃街，娱乐场所，该店客房整洁，宽敞明亮，环境卫生，配套设施齐全，服务周到，方便入住",
             "城市便捷酒店（霞浦店）位于东吾路，近福宁大道，地段繁华，交通便捷。酒店周边旅游资源丰富，海国桃源―杨家溪及被誉为中国夫丽滩涂的霞浦风光摄影地均只需30分钟车程城市便捷酒店（霞浦店）是城市便捷酒店集团旗下的一家经济快捷精品酒店。",
             "艾美福维尔酒店是福建艾美商业集团有限公司旗下精品酒店位于中国滩涂摄影圣地\"霞浦”，毗邻霞浦客运站、福宁文化公园。酒店整体装饰简约现代，客房布置舒适洁净，多款房型内均配以优质床上用品、豪华淋浴设备、舒适办公桌椅、丰富的电视节目，是出差、旅游的理想选择。",
             "锐思特酒店起源于2006年,是逸柏酒店集团旗下个“舒适商旅型\"品牌。以追求“高性价比的品质\"为品牌的市场定位。多年来，通过高性价比的“投资设计\"及良好的产品体验性能，获得了众多投资者与消费者的认可。作为集团旗下精选商务酒店品牌，锐思特酒店结合家居理念精心设计，以\"时尚、舒适、简约\"为主导，精致配置“高星级床上用品\"、“时尚卫浴\"等酒店核心部件，打造出酒店产品的极致化体验。",
