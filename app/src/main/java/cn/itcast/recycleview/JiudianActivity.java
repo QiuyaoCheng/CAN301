@@ -34,7 +34,7 @@ public class JiudianActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private HomeAdapter mAdapter;
     private DialogOrderTypeFragment mFragment2=new DialogOrderTypeFragment();
-    private String[] name1 = {"大床房","双床房","优质大床房","优质双床房","豪华套房"};
+    private String[] name1 = {"大床房","双","优质大床房","优质双床房","豪华套房"};
     private int[] image = {R.drawable.achuncanguang,R.drawable.shuangchuangfang,R.drawable.youzhidachuangfang,R.drawable.youzhishuangchuangfang,R.drawable.haohuataofang};
     private  String[] buy ={"¥123","¥129","¥177","¥177","¥235"};
     private  String[] introduces = {"大床  有窗  18-22平方米",
